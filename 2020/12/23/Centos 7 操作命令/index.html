@@ -5,21 +5,23 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://example.com">
-  <title>Hello World | Yan Leidong&#39;s Blogs</title>
+  <link rel="dns-prefetch" href="http://blog.yanleidong.top">
+  <title>Centos 7 操作命令 | Yan Leidong&#39;s Blogs</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="Centos 7 操作命令安装lrzsz1yum install lrzsz SCP 下载服务器文件至本地桌面 1scp root@192.168.100.100:&#x2F;root&#x2F;test.txt &#x2F;Users&#x2F;mac&#x2F;Desktop 上传本地桌面上的 test.txt 到服务器 root 目录下 1scp &#x2F;Users&#x2F;mac&#x2F;Desktop&#x2F;test.txt root@123.207.170.40">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2020/12/22/hello-world/index.html">
+<meta property="og:title" content="Centos 7 操作命令">
+<meta property="og:url" content="http://blog.yanleidong.top/2020/12/23/Centos%207%20%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Yan Leidong&#39;s Blogs">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Centos 7 操作命令安装lrzsz1yum install lrzsz SCP 下载服务器文件至本地桌面 1scp root@192.168.100.100:&#x2F;root&#x2F;test.txt &#x2F;Users&#x2F;mac&#x2F;Desktop 上传本地桌面上的 test.txt 到服务器 root 目录下 1scp &#x2F;Users&#x2F;mac&#x2F;Desktop&#x2F;test.txt root@123.207.170.40">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-12-22T15:32:31.783Z">
-<meta property="article:modified_time" content="2020-12-22T15:32:31.783Z">
+<meta property="article:published_time" content="2020-12-22T16:10:24.000Z">
+<meta property="article:modified_time" content="2020-12-25T13:46:03.347Z">
 <meta property="article:author" content="Yan Leidong">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Centos 7">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Yan Leidong&#39;s Blogs" type="application/atom+xml">
@@ -28,13 +30,11 @@
     <link rel="icon" href="/favicon.ico">
   
   
-    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
-  
   <link rel="stylesheet" type="text/css" href="/./main.a5fda8.css">
   <style type="text/css">
     
     #container.show {
-      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+      background: linear-gradient(0deg,#a0cfe4,#e8c37e);
     }
   </style>
   
@@ -47,10 +47,26 @@
   
   
 
+<script>
+  (function () {
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    } else {
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+
+</script>
+
+
 
   
     <script src="/lib/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-center-radar.css" rel="stylesheet">
   
 
 </head>
@@ -62,7 +78,7 @@
       
 
 
-<div class="overlay" style="background: #4d4d4d;"></div>
+<div class="overlay" style="background: #4d4d4d;background: url('/img/biubiubiu.gif') no-repeat ;"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -78,9 +94,9 @@
 			
 				<li><a href="/" target="_blank">主页</a></li>
 			
-				<li><a href="https://yanleidong.gitee.io/" target="_blank">技术笔记</a></li>
+				<li><a href="https://blog.yanleidong.top/" target="_blank">技术笔记</a></li>
 			
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
+				<li><a href="/" target="_blank">随笔</a></li>
 			
 			</ul>
 		</nav>
@@ -102,34 +118,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					
-						<a class="0" href="#" 
-												title="subNav.title.0" target="_blank"><i class="icon-0"></i></a>
-					
-				
-					
-						<a class="0" href="#" 
-												title="subNav.title.0" target="_blank"><i class="icon-0"></i></a>
-					
-				
-					
-						<a class="0" href="#" 
-												title="subNav.title.0" target="_blank"><i class="icon-0"></i></a>
-					
-				
 			</div>
-		
-			
-			
-			
-			
-			<div>
-				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="86" src="//music.163.com/outchain/player?type=2&id=1332647902&auto=1&height=66"></iframe>
-			</div>
-			
-				
-				<p style="font-size: 12px;">这似乎是首纯音乐，请尽情的欣赏它吧！<p>
-			
 		
 		</nav>
 	</header>		
@@ -137,12 +126,6 @@
 
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
-      
-      
-      <a class="forkMe" style="position:absolute;z-index:999;top:0;right:0.5em;" 
-        href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">
-        <img src="/img/forkme.png"
-          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
       
       
 <nav id="mobile-nav">
@@ -174,21 +157,6 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						
-						<a class="0" target="_blank" 
-							href="#" title="subNav.title.0"><i class="icon-0"></i></a>
-						
-					
-						
-						<a class="0" target="_blank" 
-							href="#" title="subNav.title.0"><i class="icon-0"></i></a>
-						
-					
-						
-						<a class="0" target="_blank" 
-							href="#" title="subNav.title.0"><i class="icon-0"></i></a>
-						
-					
 				</div>
 			</nav>
 
@@ -198,9 +166,9 @@
 				
 					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a target="_blank" rel="noopener" href="https://yanleidong.gitee.io/">技术笔记</a></li>
+					<li style="width: 33.333333333333336%"><a href="https://blog.yanleidong.top/">技术笔记</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -216,14 +184,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Centos 7 操作命令" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Centos 7 操作命令
     </h1>
   
 
@@ -235,8 +203,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/12/22/hello-world/" class="archive-article-date">
-        <time datetime="2020-12-22T15:32:31.783Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-22</time>
+<a href="/2020/12/23/Centos%207%20%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" class="archive-article-date">
+        <time datetime="2020-12-22T16:10:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-23</time>
 </a>
 
   
@@ -249,7 +217,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">75字</span>
+      <span class="post-count">767字</span>
     </span>
   </span>
 
@@ -258,7 +226,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">3分</span>
     </span>
   </span>
 </div>
@@ -269,15 +237,167 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <h1 id="Centos-7-操作命令"><a href="#Centos-7-操作命令" class="headerlink" title="Centos 7 操作命令"></a>Centos 7 操作命令</h1><h2 id="安装lrzsz"><a href="#安装lrzsz" class="headerlink" title="安装lrzsz"></a>安装lrzsz</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install lrzsz</span><br></pre></td></tr></table></figure>
+<h2 id="SCP"><a href="#SCP" class="headerlink" title="SCP"></a>SCP</h2><ul>
+<li><p>下载服务器文件至本地桌面</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp root@192.168.100.100:/root/test.txt /Users/mac/Desktop</span><br></pre></td></tr></table></figure></li>
+<li><p>上传本地桌面上的 test.txt 到服务器 root 目录下</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp /Users/mac/Desktop/test.txt root@123.207.170.40:/root/</span><br></pre></td></tr></table></figure></li>
+<li><p>下载服务器 root 文件夹</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -r root@192.168.0.101:/root/ /Users/mac/Desktop/</span><br></pre></td></tr></table></figure></li>
+<li><p>上传<strong>当前本地目录下</strong>的 test 文件夹到服务器 root 目录下</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -r test root@192.168.0.101:/root/ </span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注： 目标服务器要开启写入权限。</p>
+</blockquote>
+</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="JDK安装"><a href="#JDK安装" class="headerlink" title="JDK安装"></a>JDK安装</h2><ul>
+<li><p>查询</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep java</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>rpm 　管理套件   </p>
+<p>-qa 　使用询问模式，查询所有套件</p>
+<p>grep　　查找文件里符合条件的字符串</p>
+<p>java 　查找包含java字符串的文件</p>
+</blockquote>
+</li>
+<li><p>删除内置的openjdk</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -e --nodeps (+上一步检索出来的openjdk)</span><br></pre></td></tr></table></figure></li>
+<li><p>下载符合系统版本的jdk</p>
+</li>
+</ul>
+<h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h2><ul>
+<li><p>下载Docker</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install docker</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<p> <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_32510597/article/details/105873846">https://blog.csdn.net/qq_32510597/article/details/105873846</a></p>
+</blockquote>
+<p>安装Docker 后，最好切换到国内的镜像源</p>
+<table>
+<thead>
+<tr>
+<th>国内镜像仓库名称</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Docker 官方中国区</td>
+<td><a target="_blank" rel="noopener" href="https://registry.docker-cn.com/">https://registry.docker-cn.com</a></td>
+</tr>
+<tr>
+<td>网易</td>
+<td><a target="_blank" rel="noopener" href="http://hub-mirror.c.163.com/">http://hub-mirror.c.163.com</a></td>
+</tr>
+<tr>
+<td>中国科学技术大学</td>
+<td><a target="_blank" rel="noopener" href="https://docker.mirrors.ustc.edu.cn/">https://docker.mirrors.ustc.edu.cn</a></td>
+</tr>
+<tr>
+<td>阿里云</td>
+<td><a target="_blank" rel="noopener" href="https://pee6w651.mirror.aliyuncs.com/">https://pee6w651.mirror.aliyuncs.com</a></td>
+</tr>
+</tbody></table>
+<p>修改镜像仓库</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/docker/daemon.json</span><br><span class="line">&#123;</span><br><span class="line">    &quot;registry-mirrors&quot;: [&quot;http://hub-mirror.c.163.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>重启Docker</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart docker</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+<li><p>下载完毕后，启动Docker</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure></li>
+<li><p>查看Docker版本</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker -v</span><br></pre></td></tr></table></figure></li>
+<li><p>设置Docker开机自启</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable docker</span><br></pre></td></tr></table></figure></li>
+<li><p>关闭Docker</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop docker</span><br></pre></td></tr></table></figure></li>
+<li><p>搜索镜像文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker search XXX</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>相当于访问 <a target="_blank" rel="noopener" href="https://hub.docker.com/_/docker">Docker Hub</a></p>
+<p>具体的镜像启动 参考镜像的文档说明</p>
+</blockquote>
+</li>
+<li><p>下载镜像文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull xxx:标签</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>docker pull 镜像名：标签  默认的标签是<strong>latest</strong></p>
+</blockquote>
+</li>
+<li><p>查看目前所有的镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images </span><br></pre></td></tr></table></figure></li>
+<li><p>删除镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rmi XXXX(imgae id)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>每个镜像都有一个唯一的image id</p>
+</blockquote>
+</li>
+<li><p>运行Docker</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run [--name (自定义的容器名)] -d (镜像名:标签) -p (端口映射)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>-d：后台运行</p>
+<p>-p：端口映射（主机与容器之间 ）  主机端口：容器端口</p>
+<p>标签： 如果是Latest，可以省略不写</p>
+</blockquote>
+</li>
+<li><p>查看哪些Docker正在运行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps [-a]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>-a：所有的容器，包括启动和停止的容器</p>
+</blockquote>
+</li>
+<li><p>停止运行中的容器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker stop (容器ID)</span><br><span class="line">docker stop (容器名)</span><br></pre></td></tr></table></figure></li>
+<li><p>再次运行停止中的容器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker start (容器ID)</span><br></pre></td></tr></table></figure></li>
+<li><p>删除容器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rm (容器ID)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>容器id 的状态一定要是<strong>停止的状态</strong></p>
+</blockquote>
+</li>
+<li><p>查看容器的日志</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs (容器ID/容器名)</span><br></pre></td></tr></table></figure>
+
+
+
+
+</li>
+</ul>
+<h2 id="防火墙配置"><a href="#防火墙配置" class="headerlink" title="防火墙配置"></a>防火墙配置</h2><ul>
+<li><p>查看防火墙的服务状态</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status firewalld</span><br></pre></td></tr></table></figure></li>
+<li><p>查看防火墙的状态</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl-cmd --state</span><br></pre></td></tr></table></figure></li>
+<li><p>开启防火墙服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service firewalld start</span><br></pre></td></tr></table></figure></li>
+<li><p>关闭防火墙服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service firewalld stop</span><br></pre></td></tr></table></figure></li>
+<li><p>重启防火墙服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service firewalld restart</span><br></pre></td></tr></table></figure></li>
+<li><p>查看防火墙规则</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --list-all</span><br></pre></td></tr></table></figure></li>
+<li><p>查询端口是否开放</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --query-port=8080/tcp</span><br></pre></td></tr></table></figure></li>
+<li><p>开放某个端口（80）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --add-port=80/tcp</span><br></pre></td></tr></table></figure></li>
+<li><p>移除某个端口（80）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --remove-port=80/tcp</span><br></pre></td></tr></table></figure></li>
+<li><p>重新加载防火墙配置</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>Firewall-cmd：是Linux系统提供操作firewall的一个工具；</li>
+<li>–permanent：表示设置为持久；</li>
+<li>–add-port：表示添加的端口；</li>
+</ul>
+</blockquote>
+</li>
+</ul>
 
     
 
@@ -324,7 +444,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://example.com/2020/12/22/hello-world/" title="Hello World" target="_blank">http://example.com/2020/12/22/hello-world/</a>
+          <a href="http://blog.yanleidong.top/2020/12/23/Centos 7 操作命令/" title="Centos 7 操作命令" target="_blank">http://blog.yanleidong.top/2020/12/23/Centos 7 操作命令/</a>
         </li>
         
         <li>
@@ -341,6 +461,21 @@
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Centos 7</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
@@ -391,7 +526,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/12/22/hello-world/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://blog.yanleidong.top/2020/12/23/Centos%207%20%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -403,20 +538,6 @@
   </div>
 </article>
 
-
-<nav id="article-nav">
-  
-    <a href="/2020/12/22/test/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          test
-        
-      </div>
-    </a>
-  
-  
-</nav>
 
 
 <aside class="wrap-side-operation">
@@ -445,6 +566,29 @@
 
 
 
+  
+  <div id="gitment-ctn"></div>
+  
+    <!-- 中文 -->
+    <link rel="stylesheet" href="/lib/gitment.css">
+    <script src="/lib/gitment.js"></script>
+  
+  <script>
+    <!-- id: "Centos 7 操作命令" -->
+    var gitment = new Gitment({
+      id: "20201223001024",
+      owner: 'yanleidong',
+      repo: 'yanleidong',
+      oauth: {
+        client_id: '2e3321f7b52038f85be6',
+        client_secret: '1e648642b6aa1af531ffd7aca18f7c8eaf6d53cf',
+      },
+    })
+    gitment.render('gitment-ctn')
+  </script>
+
+
+  
 
 
 
@@ -455,13 +599,13 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 <a href="http://example.com/" target="_blank">Yan Leidong</a>
+    		&copy; 2020 <a href="http://blog.yanleidong.top/" target="_blank">Yan Leidong</a>
     	</div>
-      	<div class="footer-right">
-			
+      	<!-- <div class="footer-right">
+			 
 			
       		GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a> by Litten
-      	</div>
+      	</div> -->
     </div>
   </div>
   
@@ -503,23 +647,6 @@
 
 
 <!--  -->
-
-<script>
-  /* 标签页标题切换 */
-  var originTitle = document.title;
-  var titleTime;
-  document.addEventListener("visibilitychange", function () {
-    if (document.hidden) {
-      document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-      clearTimeout(titleTime);
-    } else {
-      document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-      titleTime = setTimeout(function () {
-        document.title = originTitle;
-      }, 2000);
-    }
-  });
-</script>
 
 
     
@@ -574,7 +701,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">test</a>
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Centos 7</a>
               </li>
             
             <div class="clearfix"></div>
@@ -626,8 +757,8 @@
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://yanleidong.gitee.io/ibooks/" target="_blank" 
-                class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
+              <a href="https://yanleidong.gitee.io/" target="_blank" 
+                class="search-title" title="记录工作和学习过程中的问题和心得">
                 
                   <i class="icon-link icon"></i>
                 
@@ -655,26 +786,6 @@
               </a>
             </li>
           
-            <li class="search-li">
-              <a href="/null" target="_blank" 
-                class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                简书
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/null" target="_blank" 
-                class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                CSDN
-              </a>
-            </li>
-          
         </ul>
   		
     	</section>
@@ -684,7 +795,7 @@
     	<section class="tools-section tools-section-me" q-show="aboutme">
         
           
-  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br> SAP ABAP开发、Java后端开发<br> 公众号开发、开源爱好者、Linux<br><br><br> 联系QQ:286733860<br><br> 谢谢大家</div>
   	  	
     	</section>
     
@@ -760,6 +871,35 @@
   </div>
 
   
+<script type="text/javascript" src="/plugins/TweenMax/TweenMax.min.js"></script>
+<script type="text/javascript" src="/plugins/TweenMax/HoverImg.js"></script>
+
+<script>
+
+
+  var hoverEffect = {
+    "subNav": ".left-col .social a"
+  }
+
+
+  for (var x in hoverEffect) {
+    // 初始化data-img属性值
+    let $em = document.querySelectorAll(hoverEffect[x]);
+    $em.forEach(($a) => {
+      //console.log($a.href);
+      if (isImageType($a.href)) {
+        $a.setAttribute("data-img", $a.href)
+      }
+    })
+    // 实现悬停元素预览图片效果
+    let $a = document.querySelectorAll(hoverEffect[x] + "[data-img]");
+    $a.forEach(($em) => {
+      new HoverImgFx1($em)
+    })
+  }
+
+</script>
+
   
 <script type="text/javascript" src="/plugins/activate-power-mode/activate-power-mode.js"></script>
 <script>
@@ -789,7 +929,7 @@
   }
 
   
-    var modelName = "hibiki";
+    var modelName = "hijiki";
   
 
   var modelJsonPath = "";
@@ -805,9 +945,9 @@
     },
     display: {
        position: "right", 
-       width: 145, 
-       height: 315, 
-       hOffset: 50, 
+       width: 150, 
+       height: 350, 
+       hOffset: 25, 
       
     },
     mobile: {
@@ -815,7 +955,7 @@
        scale: 0.6 
     },
     react: {
-       opacity: 0.8 
+       opacity: 1 
     }
   })
 
