@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>SAP OB08配置汇率报错</title>
+      <link href="/posts/ee5800ef/"/>
+      <url>/posts/ee5800ef/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SAP-OB08配置汇率报错"><a href="#SAP-OB08配置汇率报错" class="headerlink" title="SAP OB08配置汇率报错"></a>SAP OB08配置汇率报错</h1><h2 id="维护GBP-SGD的换算率（汇率类型M）"><a href="#维护GBP-SGD的换算率（汇率类型M）" class="headerlink" title="维护GBP/SGD的换算率（汇率类型M）"></a>维护GBP/SGD的换算率（汇率类型M）</h2><h3 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h3><p><code>OB08</code>维护汇率的时候，提示 <code>维护GBP/SGD的换算率（汇率类型M）</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220104095632.png" alt="20220104095632"></p><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>没有为货币对维护换算比率</p><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><ol><li>事务代码：<code>OBBS</code></li><li>创建新条目，维护<strong>货币：折算率</strong><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220104095610.png" alt="20220104095610"></li><li>保存</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> fico </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> fico </tag>
+            
+            <tag> ob08 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP 资产后台配置</title>
+      <link href="/posts/69408172/"/>
+      <url>/posts/69408172/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SAP-资产后台配置"><a href="#SAP-资产后台配置" class="headerlink" title="SAP  资产后台配置"></a>SAP  资产后台配置</h1><h2 id="固定资产组织结构"><a href="#固定资产组织结构" class="headerlink" title="固定资产组织结构"></a>固定资产组织结构</h2><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211231172540.png" alt="固定资产组织结构"></p><h2 id="分配非税购置的进项税标识符"><a href="#分配非税购置的进项税标识符" class="headerlink" title="分配非税购置的进项税标识符"></a>分配非税购置的进项税标识符</h2><p>在此步骤中，您为每个公司代码指定一个进项税标识。 然后，当您过账不需要纳税但过账到与税收相关的科目的购置时，系统会使用此标识。</p><ol><li>事务代码：<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211231164836.png" alt="20211231164836"></li><li>找到公司代码，维护销项税和进项税<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211231164746.png" alt="20211231164746"></li><li>保存</li></ol><h2 id="查看资产会计：国家信息"><a href="#查看资产会计：国家信息" class="headerlink" title="查看资产会计：国家信息"></a>查看资产会计：国家信息</h2><ol><li>事务代码：<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211231171703.png" alt="20211231171703"></li><li>双击中国，查看设置的最低的固定资产金额<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211231171635.png" alt="20211231171635"></li></ol><h2 id="复制参考折旧表-折旧范围表"><a href="#复制参考折旧表-折旧范围表" class="headerlink" title="复制参考折旧表/折旧范围表"></a>复制参考折旧表/折旧范围表</h2><ol><li>事务代码：<code>OAP1</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211231171832.png" alt="20211231171832"></li><li>选择<strong>参考折旧表</strong>，然后我们进行复制<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211231172004.png" alt="20211231172004"></li><li>复制成功，返回<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211231172031.png" alt="20211231172031"></li><li>双击<strong>指定折旧表的说明</strong><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211231172201.png" alt="20211231172201"><br>5.保存</li></ol><h2 id="将折旧表分配至公司代码"><a href="#将折旧表分配至公司代码" class="headerlink" title="将折旧表分配至公司代码"></a>将折旧表分配至公司代码</h2><ol><li>事务代码：<code>OAB1</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211231172256.png" alt="20211231172256"></li><li>找到自己的公司代码，将折旧范围维护上去<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211231172343.png" alt="20211231172343"></li><li>保存</li></ol><h2 id="创建屏幕格式规则"><a href="#创建屏幕格式规则" class="headerlink" title="创建屏幕格式规则"></a>创建屏幕格式规则</h2><ol><li>事务代码：<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220104140616.png" alt="20220104140616"></li><li>这边不可创建新条目，我们可以拷贝系统原始的1000-不动产，来创建新条目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220104140754.png" alt="20220104140754">   </li><li>保存</li></ol><h2 id="定义号码范围间隔"><a href="#定义号码范围间隔" class="headerlink" title="定义号码范围间隔"></a>定义号码范围间隔</h2><ol><li>事务代码：<code>AS08</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220104140841.png" alt="20220104140841"></li><li>输入公司代码，维护<strong>间隔</strong></li><li>维护资产号段<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220104141258.png" alt="20220104141258"></li><li>保存</li></ol><h2 id="确定账户确定"><a href="#确定账户确定" class="headerlink" title="确定账户确定"></a>确定账户确定</h2><ol><li>事务代码：<code>ORG2</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220104141736.png" alt="20220104141736"></li><li>创建新条目，维护科目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220104141707.png" alt="20220104141707"></li><li>保存</li></ol><h2 id="定义资产分类"><a href="#定义资产分类" class="headerlink" title="定义资产分类"></a>定义资产分类</h2><ol><li>事务代码：<code>AM01</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220104141350.png" alt="20220104141350"></li><li>创建新条目，维护数据<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220104141922.png" alt="20220104141922"><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220104142158.png" alt="20220104142158"></li><li>保存</li></ol><h2 id="定义资产主数据的屏幕格式"><a href="#定义资产主数据的屏幕格式" class="headerlink" title="定义资产主数据的屏幕格式"></a>定义资产主数据的屏幕格式</h2><ol><li>事务代码：<code>OA77</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220104142530.png" alt="20220104142530"></li><li>选择<code>定义资产主数据的屏幕布局</code></li><li>选择自己的资产类别，双击逻辑字段组，配置每个屏幕上的字段<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220104142937.png" alt="20220104142937"></li><li>保存</li></ol><h2 id="定义折旧范围过帐到总帐的方式"><a href="#定义折旧范围过帐到总帐的方式" class="headerlink" title="定义折旧范围过帐到总帐的方式"></a>定义折旧范围过帐到总帐的方式</h2><ol><li>事务代码：<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220105203706.png" alt="20220105203706"></li><li>选择自己的折旧表<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220105203738.png" alt="20220105203738"></li><li>双击 1 帐面折旧<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220105203806.png" alt="20220105203806"></li><li>保存</li></ol><h2 id="分配总帐科目"><a href="#分配总帐科目" class="headerlink" title="分配总帐科目"></a>分配总帐科目</h2><ol><li>事务代码：<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220105203850.png" alt="20220105203850"></li><li>选择 自己的 折旧表，双击 科目确定<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220105203959.png" alt="20220105203959">   </li><li>选中 科目分配， 双击 资产负债科目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220105205441.png" alt="20220105205441"></li><li>选中 科目分配， 双击 折旧<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220106095550.png" alt="20220106095550"></li><li>保存</li></ol><h2 id="定义终止值代码"><a href="#定义终止值代码" class="headerlink" title="定义终止值代码"></a>定义终止值代码</h2><ol><li>事务代码：<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220106163923.png" alt="20220106163923"></li><li>创建新条目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220106164056.png" alt="20220106164056"></li><li>维护终止值名称<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220106164210.png" alt="20220106164210"></li><li>保存</li><li>维护等级<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220106164449.png" alt="20220106164449"></li><li>保存</li></ol><h2 id="维护期间控制方法"><a href="#维护期间控制方法" class="headerlink" title="维护期间控制方法"></a>维护期间控制方法</h2><ol><li>事务代码：<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220106165004.png" alt="20220106165004"></li><li>创建新条目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220106165121.png" alt="20220106165121"></li><li>保存</li></ol><h2 id="维护折旧码"><a href="#维护折旧码" class="headerlink" title="维护折旧码"></a>维护折旧码</h2><ol><li>事务代码：<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220106104109.png" alt="20220106104109"></li><li>创建新条目，<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220106164759.png" alt="20220106164759"></li><li>双击  计算方法的分配， 创建新条目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220106165229.png" alt="20220106165229"></li><li>最后保存需要激活折旧码<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220106165418.png" alt="20220106165418"></li><li>按上面的步骤新建其他的折旧码<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220106165609.png" alt="20220106165609"></li></ol><h2 id="将资产分类对应的-折旧范围打开"><a href="#将资产分类对应的-折旧范围打开" class="headerlink" title="将资产分类对应的 折旧范围打开"></a>将资产分类对应的 折旧范围打开</h2><ol><li>事务代码：<code>OAYZ</code></li><li>选中资产类， 点击折旧范围， 维护 折旧码和屏幕格式<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220106165802.png" alt="20220106165802"></li><li>保存， 其他的资产类也一样操作</li></ol><h2 id="锁定公司代码下的资产分类"><a href="#锁定公司代码下的资产分类" class="headerlink" title="锁定公司代码下的资产分类"></a>锁定公司代码下的资产分类</h2><p>这样我们在前台就看不到我们不需要的资产分类</p><ol><li>事务代码：<code>AM05</code></li><li>选中公司代码，将不需要显示的资产分类勾选上<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20220107100005.png" alt="20220107100005"></li><li>保存</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> fico </category>
+          
+          <category> aa </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> fico </tag>
+            
+            <tag> aa </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP VF01报错</title>
+      <link href="/posts/b9454d27/"/>
+      <url>/posts/b9454d27/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SAP-VF01报错"><a href="#SAP-VF01报错" class="headerlink" title="SAP VF01报错"></a>SAP VF01报错</h1><h2 id="凭证-90000000-保存（帐户确定出错）"><a href="#凭证-90000000-保存（帐户确定出错）" class="headerlink" title="凭证 90000000 保存（帐户确定出错）"></a>凭证 90000000 保存（帐户确定出错）</h2><h3 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h3><p><code>VF01</code> 做交货单开票的时候，提示 凭证 90000000 保存（帐户确定出错）</p><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>在<strong>科目确定过程</strong>中没有找到条件记录，需要在5个条件表中至少维护一个条件记录</p><h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><ol><li>事务代码：<code>VK0A</code></li><li>维护<code>004 一般的</code></li><li>创建新条目，维护数据<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/e659abdd8b8c1dc782d34d478e7f6909.png" alt="e659abdd8b8c1dc782d34d478e7f6909"></li><li>保存<blockquote><p><a href="https://blog.csdn.net/zhongguomao/article/details/52778839">https://blog.csdn.net/zhongguomao/article/details/52778839</a></p></blockquote></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> sd </category>
+          
+          <category> vf01 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> sd </tag>
+            
+            <tag> vf01 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP VA01报错</title>
+      <link href="/posts/dd2420ee/"/>
+      <url>/posts/dd2420ee/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SAP-VA01报错"><a href="#SAP-VA01报错" class="headerlink" title="SAP VA01报错"></a>SAP VA01报错</h1><h2 id="没有用于售达方-XXXXXX-的客户主记录存在"><a href="#没有用于售达方-XXXXXX-的客户主记录存在" class="headerlink" title="没有用于售达方 XXXXXX 的客户主记录存在"></a>没有用于售达方 XXXXXX 的客户主记录存在</h2><h3 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h3><p>没有用于售达方 XXXXXX 的客户主记录存在</p><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>客户主数据-销售组织数据未维护完整</p><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><ol><li>输入事务代码：<code>XDO2</code></li><li>输入<code>SP 售达方</code> <code>BP 收票方</code> <code>PY 付款方</code> <code>SH 送达方</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/59449b671303dccc4adbc53562b1e306.png" alt="59449b671303dccc4adbc53562b1e306"></li><li>保存</li></ol><h2 id="无定价过程能被确定"><a href="#无定价过程能被确定" class="headerlink" title="无定价过程能被确定"></a>无定价过程能被确定</h2><h3 id="问题现象-1"><a href="#问题现象-1" class="headerlink" title="问题现象"></a>问题现象</h3><p>无定价过程能被确定<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/22be7d965f46ebfbac79847d295497ab.png" alt="22be7d965f46ebfbac79847d295497ab"></p><h3 id="原因-1"><a href="#原因-1" class="headerlink" title="原因"></a>原因</h3><p>无法确定合适的 定价过程，因为在表 683V 中不存在任何关键值为 ‘7777 00 10’ ‘A’ ‘’ 的条目。</p><h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><ol><li>事务代码：<code>DFP4</code> 或者 <code>OVKK</code></li><li>选择<code>定义定价程序确定</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/3f8bade65fe511b812b55c13c49593fe.png" alt="3f8bade65fe511b812b55c13c49593fe"></li><li>维护<code>销售组织</code> <code>分销渠道</code> <code>产品组</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/f07abf3bece382f625cdfc8d742da6c7.png" alt="f07abf3bece382f625cdfc8d742da6c7"></li><li>保存</li></ol><h2 id="销售订单行项目带不出价格"><a href="#销售订单行项目带不出价格" class="headerlink" title="销售订单行项目带不出价格"></a>销售订单行项目带不出价格</h2><h3 id="问题现象-2"><a href="#问题现象-2" class="headerlink" title="问题现象"></a>问题现象</h3><p>销售订单行项目带不出价格</p><h3 id="原因-2"><a href="#原因-2" class="headerlink" title="原因"></a>原因</h3><p>客户主数据未维护<code>定价过程</code></p><h3 id="解决-1"><a href="#解决-1" class="headerlink" title="解决"></a>解决</h3><ol><li>维护客户销售组织试图的 <code>客户定价过程</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/abcc4814c84f1c44dbb2883b2603d1c7.png" alt="abcc4814c84f1c44dbb2883b2603d1c7"></li></ol><h2 id="定价错误：-必要条件-MWST-丢失"><a href="#定价错误：-必要条件-MWST-丢失" class="headerlink" title="定价错误： 必要条件 MWST 丢失"></a>定价错误： 必要条件 MWST 丢失</h2><h3 id="问题现象-3"><a href="#问题现象-3" class="headerlink" title="问题现象"></a>问题现象</h3><p>定价错误： 必要条件 MWST 丢失</p><h3 id="原因-3"><a href="#原因-3" class="headerlink" title="原因"></a>原因</h3><p>未维护<code>MWST</code>定价条件</p><h3 id="解决-2"><a href="#解决-2" class="headerlink" title="解决"></a>解决</h3><ol><li>事务代码：<code>VK12</code></li><li>输入 <code>MWST</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/f162b76d91c6b434fd282d2717d40059.png" alt="f162b76d91c6b434fd282d2717d40059"></li><li>选择 <code>国家税</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/0aa2384a3d3e2678742e37b7694d8714.png" alt="0aa2384a3d3e2678742e37b7694d8714"></li><li>执行 </li><li>维护 销项税条件<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/e3c6c7fe02557680f72c3ee5cd2e5edd.png" alt="e3c6c7fe02557680f72c3ee5cd2e5edd"></li><li>保存</li><li>输入<code>XD02</code>，更改客户的销项税分类<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/762d0bb5b3d620248467d2952adae7ab.png" alt="762d0bb5b3d620248467d2952adae7ab"></li><li>保存</li><li>输入<code>MM02</code>，更改物料的税分类<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/269b3d08edfa389fcad32424d1196ac7.png" alt="269b3d08edfa389fcad32424d1196ac7"></li><li>保存</li></ol><h2 id="装运条件-装载组-0001-工厂-7777-存货地点-没有定义"><a href="#装运条件-装载组-0001-工厂-7777-存货地点-没有定义" class="headerlink" title="装运条件  装载组 0001 工厂 7777 存货地点  没有定义"></a>装运条件  装载组 0001 工厂 7777 存货地点  没有定义</h2><h3 id="问题现象-4"><a href="#问题现象-4" class="headerlink" title="问题现象"></a>问题现象</h3><p>销售订单不完整性日志提示，维护<code>装运条件</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/c08a3a18c9da411f428275fb2387218e.png" alt="c08a3a18c9da411f428275fb2387218e"></p><h3 id="原因-4"><a href="#原因-4" class="headerlink" title="原因"></a>原因</h3><p>客户主数据未维护<code>装运条件</code></p><h3 id="解决-3"><a href="#解决-3" class="headerlink" title="解决"></a>解决</h3><ol><li>事务代码：<code>OVKH</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/671da68b74f3114793783dc442f31349.png" alt="671da68b74f3114793783dc442f31349"></li><li>维护订单类型对应的装运条件<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/4fa346c5294bc8ce255db7c1d2e12cc2.png" alt="4fa346c5294bc8ce255db7c1d2e12cc2"></li><li>保存</li><li>事务代码：<code>XD02</code></li><li>维护客户的销售组织视图的<code>装运条件</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/f2e39581b37b88f9b2a221fc49e6c3a2.png" alt="f2e39581b37b88f9b2a221fc49e6c3a2"></li><li>保存</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> sd </category>
+          
+          <category> va01 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> sd </tag>
+            
+            <tag> va01 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP 凭证替代</title>
+      <link href="/posts/2128b821/"/>
+      <url>/posts/2128b821/</url>
+      
+        <content type="html"><![CDATA[<h1 id="凭证替代"><a href="#凭证替代" class="headerlink" title="凭证替代"></a>凭证替代</h1><h2 id="后台配置"><a href="#后台配置" class="headerlink" title="后台配置"></a>后台配置</h2><ol><li>事务代码：<code>OBBH</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/808bea897f6c7b1badeda7a5fcfd6c8a.png" alt="808bea897f6c7b1badeda7a5fcfd6c8a"></li><li>创建新条目， 输入<code>公司代码</code> <code>调用点</code> <code>替代</code>，系统提示未找到替代，我们双击<code>调用点</code>，系统将自动创建替代，我们选择 <code>是</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/96791858f345768a67d0f7043e7347ad.png" alt="96791858f345768a67d0f7043e7347ad"><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/65847dc76f5dccb422494772a630907f.png" alt="65847dc76f5dccb422494772a630907f"></li><li>创建<code>步骤</code>，选择 需要替代的字段名称（我们这边选择BKTXT）<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/2a743c4366c6a090cc581c274510659d.png" alt="2a743c4366c6a090cc581c274510659d"></li><li>我们三种替代方式<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/8c6a0715f09426744c7081e5d6c0a725.png" alt="8c6a0715f09426744c7081e5d6c0a725"></li><li>维护<code>先决条件</code> 和 <code>替换逻辑</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/eaa2a681e95904ea62a30519e6a243cc.png" alt="eaa2a681e95904ea62a30519e6a243cc"><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/e52e80483e081ea26b16a8195c8d7de9.png" alt="e52e80483e081ea26b16a8195c8d7de9"></li><li>保存，返回 激活替代<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/caf7f1aa2c28f08401e1d68cbd830563.png" alt="caf7f1aa2c28f08401e1d68cbd830563"></li><li>保存</li></ol><p>如果是选择的是<strong>退出</strong>模式，正常都会用自建的程序来代替系统标准的程序<code>RGGBS000</code></p><blockquote><p><a href="https://www.pianshen.com/article/68321580397/">https://www.pianshen.com/article/68321580397/</a></p></blockquote><ol><li>事务代码：<code>GCX2</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/f0346185071b0eb93163215cbe3df7b1.png" alt="f0346185071b0eb93163215cbe3df7b1"></li><li><code>SE38</code>里面拷贝出来 <code>ZRGGBS000</code><blockquote><p>拷贝的时候，只需要改一下程序名就行了，include不需要重新命名<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/aaee6b93d923513c4da607e07596eeaf.png" alt="aaee6b93d923513c4da607e07596eeaf"><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/042afcafa6e6cd61dbcfc15907ec71cf.png" alt="042afcafa6e6cd61dbcfc15907ec71cf"></p></blockquote></li><li>复制成功之后，我们激活程序</li><li>我们更改<code>GCX2</code> 里面的调用程序<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/f1fcbfcb3836cffb4f2f326cdfb607b9.png" alt="f1fcbfcb3836cffb4f2f326cdfb607b9"></li><li>后面就在<code>ZRGGBS000</code>里面新增出口，同时在<code>OBBH</code>里面配置对应的出口</li><li>激活</li></ol><p>如果替代里面找不到自己需要的字段，需要去<code>SM30</code>去修改<code>VWTYGB01</code>，将字段的排除字段<code>X</code>，或者表<code>GB01</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/fa5c949e3757867cf3e12ec3f2056c43.png" alt="fa5c949e3757867cf3e12ec3f2056c43"></p><p>更改好了之后，执行程序<code>RGUGBR00</code>更新主程序<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/63cbe72f29f14ad2c4dae31fbab2ee85.png" alt="63cbe72f29f14ad2c4dae31fbab2ee85"></p><blockquote><p><a href="https://www.cnblogs.com/mingdashu/p/6963649.html">https://www.cnblogs.com/mingdashu/p/6963649.html</a></p></blockquote><hr><h2 id="前台测试"><a href="#前台测试" class="headerlink" title="前台测试"></a>前台测试</h2><ol><li><code>F-02</code>手工创建一个凭证</li><li><code>FB03</code>展示凭证抬头<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/f4331ff6c991f0c079bea0c32e6ee0b0.png" alt="f4331ff6c991f0c079bea0c32e6ee0b0"></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> fico </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> fico </tag>
+            
+            <tag> 凭证校验 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP 凭证校验</title>
+      <link href="/posts/b7cf9c00/"/>
+      <url>/posts/b7cf9c00/</url>
+      
+        <content type="html"><![CDATA[<h1 id="凭证校验"><a href="#凭证校验" class="headerlink" title="凭证校验"></a>凭证校验</h1><h2 id="后台配置"><a href="#后台配置" class="headerlink" title="后台配置"></a>后台配置</h2><ol><li>事务代码：<code>OB28</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/9a734b72a27a98b82547c5687db351bd.png" alt="9a734b72a27a98b82547c5687db351bd"></li><li>创建新条目，输入公司代码和调用点<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/dc192123da0fcfa8421e701b8d5a0648.png" alt="dc192123da0fcfa8421e701b8d5a0648"></li><li>双击 已添加的条目，新建<code>确认</code> <strong>Z000001</strong><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/568d12e92e7bca7db5493e2dc1fda2e0.png" alt="568d12e92e7bca7db5493e2dc1fda2e0"></li><li>维护<code>先决条件</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/0f56526b3f65139d3c39eb69a50919c2.png" alt="0f56526b3f65139d3c39eb69a50919c2"></li><li>维护检查项目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/59f34867aae1d4f10c219c1bcccb0c45.png" alt="59f34867aae1d4f10c219c1bcccb0c45"></li><li>维护报错信息<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/fca93e62a648db9a0f02cbef383e6d48.png" alt="fca93e62a648db9a0f02cbef383e6d48"></li><li>保存，返回 <code>OB28</code> ，将确认点激活<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/fbda67fccbafb8b12a2ebe1edee04f02.png" alt="fbda67fccbafb8b12a2ebe1edee04f02"></li><li>保存</li></ol><hr><h2 id="前台测试"><a href="#前台测试" class="headerlink" title="前台测试"></a>前台测试</h2><ol><li><code>F-02</code> 测试<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/4e55b0d6a23467099e4257fa433a7aff.png" alt="4e55b0d6a23467099e4257fa433a7aff"></li><li>按回车 系统检查报错<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/683d85ea2850f8214ff39a9c356e4662.png" alt="683d85ea2850f8214ff39a9c356e4662"></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> fico </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> fico </tag>
+            
+            <tag> 凭证校验 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP 外币评估</title>
+      <link href="/posts/ab0a20d2/"/>
+      <url>/posts/ab0a20d2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="外币评估"><a href="#外币评估" class="headerlink" title="外币评估"></a>外币评估</h1><h2 id="配置KDB（汇兑损益科目）"><a href="#配置KDB（汇兑损益科目）" class="headerlink" title="配置KDB（汇兑损益科目）"></a>配置KDB（汇兑损益科目）</h2><ol><li><p>事务代码：<code>OBA1</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/15b2b602189acc1a181272e455b5fb62.png" alt="15b2b602189acc1a181272e455b5fb62"></p></li><li><p>维护损益科目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211231140103.png" alt="20211231140103"></p></li><li><p>保存</p></li></ol><h2 id="配置KDF（未清项-总分类帐科目）"><a href="#配置KDF（未清项-总分类帐科目）" class="headerlink" title="配置KDF（未清项/总分类帐科目）"></a>配置KDF（未清项/总分类帐科目）</h2><ol><li><p>事务代码：OBA1<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211231134814.png" alt="20211231134814"></p></li><li><p>维护科目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/f469e13e62ad62a742738bc13d180499.png" alt="f469e13e62ad62a742738bc13d180499"></p></li></ol><hr><h1 id="前台测试"><a href="#前台测试" class="headerlink" title="前台测试"></a>前台测试</h1><ol><li><code>OB08</code> 维护汇率<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/514fb64c60656b63eb0edc648b675c45.png" alt="514fb64c60656b63eb0edc648b675c45"></li><li><code>F-43</code> 手工做一笔供应商发票 过账日期在 <em>2018.08.01</em> ，汇率为 <em>6.3789</em><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/94e2c8e310c8909e718d66d98e76c0ff.png" alt="94e2c8e310c8909e718d66d98e76c0ff"></li><li><code>FBL1N</code>查看供应商未清项(里面包含我之前测试的一笔发票)<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/3953b68a6ebd008806db32e4d53928b5.png" alt="3953b68a6ebd008806db32e4d53928b5"></li><li><code>FAGL_FC_VAL</code>- 进行外币估值<br>设置运行参数，勾选未清项<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/f9b1474ff6863e6d2afb081701d3f481.png" alt="f9b1474ff6863e6d2afb081701d3f481"><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/b15a1aa27a05cb5db5eab1e6697b2aa4.png" alt="b15a1aa27a05cb5db5eab1e6697b2aa4"></li><li>执行<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/ec8cc01b590018c726a1481c49a33e32.png" alt="ec8cc01b590018c726a1481c49a33e32"></li><li>点击<code>过账</code>，查看凭证<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/e4abc04309d97f382fa5d5272cbd1d35.png" alt="e4abc04309d97f382fa5d5272cbd1d35"></li><li>没有问题的话，就可以正式运行</li><li>如果需要冲销外币评估，也需要在当前程序进行冲销<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/07afdfa5d36716fc99049f771ccd3f99.png" alt="07afdfa5d36716fc99049f771ccd3f99"></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> fico </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> fico </tag>
+            
+            <tag> 外币评估 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP ARAP重分类</title>
+      <link href="/posts/2947faf7/"/>
+      <url>/posts/2947faf7/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ARAP重分类"><a href="#ARAP重分类" class="headerlink" title="ARAP重分类"></a>ARAP重分类</h1><h2 id="配置排序方法"><a href="#配置排序方法" class="headerlink" title="配置排序方法"></a>配置排序方法</h2><ol><li><p>事务代码：<code>OBBU</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/cb34fe6e0876477c02b3a2d6a9dac99a.png" alt="cb34fe6e0876477c02b3a2d6a9dac99a"></p></li><li><p>创建新条目，维护<code>排序方法</code>和<code>名称</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/b8197c6f8b2bb6a4499949cfbc2e7a76.png" alt="b8197c6f8b2bb6a4499949cfbc2e7a76"></p></li><li><p>双击<code>应收款</code>,创建新条目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/537e09a336bf53867e94f61952b4af82.png" alt="537e09a336bf53867e94f61952b4af82"></p></li><li><p>双击<code>应付的</code>， 创建新条目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/726739972b87b131bb7a07668769765a.png" alt="726739972b87b131bb7a07668769765a"></p></li><li><p>保存</p></li></ol><h2 id="配置重分类的调整科目"><a href="#配置重分类的调整科目" class="headerlink" title="配置重分类的调整科目"></a>配置重分类的调整科目</h2><ol><li><p>事务代码：<code>OBBV</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/6583047a58906940917a693ab73e5968.png" alt="6583047a58906940917a693ab73e5968"></p></li><li><p>找到我们刚刚在排序方法里面的的记账事务</p><blockquote><p>我这边是<code>V05 V06 V07 V08</code></p></blockquote></li><li><p>输入<code>账目表</code>，维护<strong>调整科目</strong></p><blockquote><p>V06 与 V05 配置一样， V08 与 V07 配置一样</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/f36b782aabd1f5c2058a3b9d549bcc46.png" alt="f36b782aabd1f5c2058a3b9d549bcc46"><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/b8a7b905e6bc9740446db46cd4540d3a.png" alt="b8a7b905e6bc9740446db46cd4540d3a"></p><blockquote><p><strong>V05</strong><br>2202010000    2202990100    1123990100<br><strong>V06</strong><br>2202010000    2202990100    1123990100<br><strong>V07</strong><br>1122020000    1122020100    2203990100<br><strong>V08</strong><br>1122020000    1122020100    2203990100</p></blockquote><p>可以参照下图去配置<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/ceae13db5c6a1d1b880efad16cca244e.png" alt="ceae13db5c6a1d1b880efad16cca244e"></p></li></ol><h2 id="配置评估方法"><a href="#配置评估方法" class="headerlink" title="配置评估方法"></a>配置评估方法</h2><ol><li><p>事务代码：<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/2f50c82d232bd972dba1578136a027e2.png" alt="2f50c82d232bd972dba1578136a027e2"></p></li><li><p>创建新条目，维护评估方法属性<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/ec07abe32aed1a963ef58e672c900df0.png" alt="ec07abe32aed1a963ef58e672c900df0"></p></li><li><p>保存</p></li></ol><h2 id="确定评估范围"><a href="#确定评估范围" class="headerlink" title="确定评估范围"></a>确定评估范围</h2><ol><li><p>事务代码：<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/8d00339a6f6cc908379bd9d8102729a5.png" alt="8d00339a6f6cc908379bd9d8102729a5"></p></li><li><p>创建新条目，维护数据<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/52d7fb5cd540bf839ba759fb3372ec03.png" alt="52d7fb5cd540bf839ba759fb3372ec03"></p></li><li><p>保存</p></li></ol><h2 id="检查配分到分类账组的会计核算原则"><a href="#检查配分到分类账组的会计核算原则" class="headerlink" title="检查配分到分类账组的会计核算原则"></a>检查配分到分类账组的会计核算原则</h2><ol><li><p>事务代码：<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/b337d585a70d5f4c0752b80e31d0b23b.png" alt="b337d585a70d5f4c0752b80e31d0b23b"></p></li><li><p>创建新条目，维护会计准则<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/4a7227d2c6ef9c6a02d7450c0a5a3e4f.png" alt="4a7227d2c6ef9c6a02d7450c0a5a3e4f"></p></li><li><p>保存</p></li></ol><h2 id="分配评估范围和会计核算原则"><a href="#分配评估范围和会计核算原则" class="headerlink" title="分配评估范围和会计核算原则"></a>分配评估范围和会计核算原则</h2><ol><li><p>事务代码：<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/8f79c7ebae4238afc236887f60284a8b.png" alt="8f79c7ebae4238afc236887f60284a8b"></p></li><li><p>创建新条目，维护数据<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/8f92b5dd8bb13e7d8b5258512813cab1.png" alt="8f92b5dd8bb13e7d8b5258512813cab1"></p></li><li><p>保存</p></li></ol><hr><h2 id="ARAP重分类前台操作"><a href="#ARAP重分类前台操作" class="headerlink" title="ARAP重分类前台操作"></a>ARAP重分类前台操作</h2><ol><li>事务代码：<code>FAGLF101</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/f46a37cd0baa9878814c031caa7d30f7.png" alt="f46a37cd0baa9878814c031caa7d30f7"><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/95b05325c17c1d5ff09e386f57b6d866.png" alt="95b05325c17c1d5ff09e386f57b6d866"></li><li>执行<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/40a6d064d0b50695c8672fe2962333dd.png" alt="40a6d064d0b50695c8672fe2962333dd"></li><li>过账<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/f87c8806b87970472cb1da96d7eeb9f9.png" alt="f87c8806b87970472cb1da96d7eeb9f9"></li><li><code>SM35</code>去查看生成的会话<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/94c00d6467588f0acfd0c07a0b567aa8.png" alt="94c00d6467588f0acfd0c07a0b567aa8"></li><li>选中会话，处理</li><li>执行完了，我们会看到执行日志<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/ba164b4a02f757527e6c6fb0d1864e6a.png" alt="ba164b4a02f757527e6c6fb0d1864e6a"></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> fico </category>
+          
+          <category> faglf101 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> fico </tag>
+            
+            <tag> faglf101 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP F110自动付款配置</title>
+      <link href="/posts/c1f18170/"/>
+      <url>/posts/c1f18170/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SAP-F110自动付款配置"><a href="#SAP-F110自动付款配置" class="headerlink" title="SAP F110自动付款配置"></a>SAP F110自动付款配置</h1><blockquote><p>配置F110自动付款，需要有供应商主数据、银行主数据<br>范例以ECC为例</p></blockquote><h2 id="维护银行主数据"><a href="#维护银行主数据" class="headerlink" title="维护银行主数据"></a>维护银行主数据</h2><blockquote><p>事务代码：<code>FI01</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224223326.png" alt="20211224223326"></p><h2 id="维护收付程序设置"><a href="#维护收付程序设置" class="headerlink" title="维护收付程序设置"></a>维护收付程序设置</h2><blockquote><p>事务代码：<code>FBZP</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224230049.png" alt="20211224230049"></p><h3 id="所有公司代码"><a href="#所有公司代码" class="headerlink" title="所有公司代码"></a>所有公司代码</h3><ol><li>创建新条目</li><li>填写下面的信息<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224230405.png" alt="20211224230405"><blockquote><p><code>AF</code> 这边一定要维护，尤其重要，要不然后面跑不出来付款建议</p></blockquote></li><li>保存</li></ol><h3 id="付款公司代码"><a href="#付款公司代码" class="headerlink" title="付款公司代码"></a>付款公司代码</h3><ol><li>创建新条目</li><li>填写付款的最少金额<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224230901.png" alt="20211224230901"></li><li>保存</li></ol><h3 id="国家的支付方式"><a href="#国家的支付方式" class="headerlink" title="国家的支付方式"></a>国家的支付方式</h3><ol><li>找到支付的国家 以<code>CN</code>为例</li><li>创建新条目</li><li>创建付款方式 1<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224231136.png" alt="20211224231136"></li><li>许可货币（可选）</li><li>允许的目的过国（可选）</li><li>保存</li></ol><h3 id="公司代码中的支付方式"><a href="#公司代码中的支付方式" class="headerlink" title="公司代码中的支付方式"></a>公司代码中的支付方式</h3><ol><li>创建新条目</li><li>维护公司代码级的支付方法<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224231426.png" alt="20211224231426"></li><li>保存</li></ol><h3 id="银行确定"><a href="#银行确定" class="headerlink" title="银行确定"></a>银行确定</h3><ol><li>选择公司代码</li><li>双击分类订单</li><li>创建新条目，维护数据<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224231552.png" alt="20211224231552"></li><li>双击银行账户</li><li>创建新条目，维护数据（这个账户标识在<strong>开户银行</strong> 里面设置）<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224231715.png" alt="20211224231715"></li><li><p>双击银行条目（已增强）<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224231813.png" alt="20211224231813"></p><blockquote><p>这边看介绍应该和步骤4，维护其中一个就可以了<br>在传统“银行科目”视图中，仅可以输入一个银行科目及其每个开户行、付款方式和货币组合的科目确定。如果在过账未清项时已定义将哪个银行科目用于不动产（举例来说），则该选项不充分。</p><p>如果是这种情况，则在“银行科目（增强型）”视图中为每个银行科目定义科目确定。付款程序首先运行传统银行科目确定。但是，如果未输入在此处的凭证中指定的银行科目，则付款程序将继续使用增强型银行科目确定。</p></blockquote></li><li>双击可用日期</li><li>创建新条目，维护可以用资金<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224232201.png" alt="20211224232201"></li><li>双击起息日</li><li>创建新条目，维护起息日（不维护的话，不知道有没有关系呗，还是要多看F1…）<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224232325.png" alt="20211224232325"></li><li>保存</li></ol><h3 id="开户银行"><a href="#开户银行" class="headerlink" title="开户银行"></a>开户银行</h3><ol><li>选择公司代码</li><li>双击<strong>银行账户</strong></li><li>创建新条目，维护账户标识<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224232531.png" alt="20211224232531"></li><li>保存</li></ol><h2 id="维护供应商的付款信息"><a href="#维护供应商的付款信息" class="headerlink" title="维护供应商的付款信息"></a>维护供应商的付款信息</h2><blockquote><p>事务代码：<code>FK01</code></p></blockquote><p>银行数据<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224223840.png" alt="20211224223840"><br>自动付款<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224224049.png" alt="20211224224049"></p><div class="note success simple"><p>以上步骤都完成的话，我们已经成功了百分之七八十了，哈哈哈哈哈哈</p></div><hr><h2 id="实际操作"><a href="#实际操作" class="headerlink" title="实际操作"></a>实际操作</h2><h3 id="F-47给供应商创建预付款请求"><a href="#F-47给供应商创建预付款请求" class="headerlink" title="F-47给供应商创建预付款请求"></a><code>F-47</code>给供应商创建预付款请求</h3><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224232945.png" alt="20211224232945"></p><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224233041.png" alt="20211224233041"></p><p>保存<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224233116.png" alt="20211224233116"></p><h3 id="FBL1N-查看供应商未清项"><a href="#FBL1N-查看供应商未清项" class="headerlink" title="FBL1N 查看供应商未清项"></a><code>FBL1N</code> 查看供应商未清项</h3><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224233203.png" alt="20211224233203"></p><p>执行我们会看到一笔我们刚刚做的一笔F的预付款请求</p><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224233358.png" alt="20211224233358"></p><h3 id="F110"><a href="#F110" class="headerlink" title="F110"></a><code>F110</code></h3><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224233528.png" alt="20211224233528"><br>如果想到一些详细的日志提醒，需要在附加日志里面勾选如下设置<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224233623.png" alt="20211224233623"></p><blockquote><p>我之前不成功，也是在这边设置了详细日志，才知道问题出在哪里</p></blockquote><p>保存，返回<strong>状态</strong>页， 点击<strong>建议</strong><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224233826.png" alt="20211224233826"></p><p>在弹出来的消息框里，勾上立即开始，执行<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224233959.png" alt="20211224233959"><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224234024.png" alt="20211224234024"><br>刷新状态<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224234045.png" alt="20211224234045"></p><p>可以在工具栏上 查看建议或者修改建议，查看建议生成日志<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224234324.png" alt="20211224234324"></p><p>点击查看建议，我们就能看到系统自动给我们创建的付款建议（上面一条红色是我之前做的）<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224234422.png" alt="20211224234422"></p><p>看见付款建议没问题的话，我们就可以点击 <strong>付款运行</strong>，真正的给供应商付款了。<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224234535.png" alt="20211224234535"></p><p>单出来的提示框，我们还是勾上立即执行，确定<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224234634.png" alt="20211224234634"><br>刷新状态，看见 已经完成<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224234704.png" alt="20211224234704"></p><p>最后我们再去<code>FBL1N</code>里面去查看供应商未清项<br>刚刚的预付款请求已经被清算了<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224234839.png" alt="20211224234839"><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224234913.png" alt="20211224234913"></p><p>你会了吗? <span class="hide-inline"><button type="button" class="hide-button button--animated" style="background-color: #FF7242;color: #fff">别点  </button><span class="hide-content">反正我不会哈哈哈哈</span></span></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> fico </category>
+          
+          <category> f110 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> fico </tag>
+            
+            <tag> f110 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP 客户后台配置</title>
+      <link href="/posts/2aa74635/"/>
+      <url>/posts/2aa74635/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SAP-客户后台配置"><a href="#SAP-客户后台配置" class="headerlink" title="SAP 客户后台配置"></a>SAP 客户后台配置</h1><h2 id="定义客户账户组"><a href="#定义客户账户组" class="headerlink" title="定义客户账户组"></a>定义客户账户组</h2><blockquote><p>事务代码：<code>OBD2</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224110318.png" alt="20211224110318"></p><ol><li>创建新条目</li><li>维护 账户组 + 名称 + 字段状态信息<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224110426.png" alt="20211224110426"></li><li>保存</li></ol><h2 id="创建供应商账户编号范围"><a href="#创建供应商账户编号范围" class="headerlink" title="创建供应商账户编号范围"></a>创建供应商账户编号范围</h2><blockquote><p>事务代码：<code>XDN1</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224110514.png" alt="20211224110514"></p><ol><li>点击 <code>间隔</code></li><li>新增间隔，维护号段范围<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224110546.png" alt="20211224110546"></li><li>保存</li></ol><h2 id="给供应商账户组分配编号范围"><a href="#给供应商账户组分配编号范围" class="headerlink" title="给供应商账户组分配编号范围"></a>给供应商账户组分配编号范围</h2><blockquote><p>事务代码：<code>OBAR</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224110615.png" alt="20211224110615"></p><ol><li>找到 对应的账户组 </li><li>维护 号码范围<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224110638.png" alt="20211224110638"></li><li>保存</li></ol><h2 id="设置合作伙伴确认"><a href="#设置合作伙伴确认" class="headerlink" title="设置合作伙伴确认"></a>设置合作伙伴确认</h2><ol><li>事务代码：``<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/fa904797dfb40575fd8c6071e2e98cff.png" alt="fa904797dfb40575fd8c6071e2e98cff"></li><li>选择<code>设置客户主数据的合作伙伴确定</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/9020839dea22d282c8d7df16394ab76b.png" alt="9020839dea22d282c8d7df16394ab76b"></li><li>选择<code>账户组-功能分配</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/fd52bcf0506954d52624fe71ba2a24d3.png" alt="fd52bcf0506954d52624fe71ba2a24d3"></li><li><p>创建新条目，维护<code>SP</code>与账户组的关系</p><blockquote><p>BP PY SH 同理</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/b3fa536062f202edfff29d40e6abee22.png" alt="b3fa536062f202edfff29d40e6abee22"></p></li><li>保存</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> sd </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> sd </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP F-44报错</title>
+      <link href="/posts/96aff2eb/"/>
+      <url>/posts/96aff2eb/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SAP-F-44报错"><a href="#SAP-F-44报错" class="headerlink" title="SAP F-44报错"></a>SAP F-44报错</h1><h2 id="在表T043G中-7777-的输入丢失"><a href="#在表T043G中-7777-的输入丢失" class="headerlink" title="在表T043G中,7777  的输入丢失"></a>在表T043G中,7777  的输入丢失</h2><h3 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h3><p><code>F-44</code> 处理供应商未清项的时候，提示<code>在表T043G中,7777  的输入丢失</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223142531.png" alt="20211223142531"></p><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>未配置 <code>客户/供应商容差</code></p><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><ol><li>进入事务代码<code>SE16</code></li><li>输入<code>T043G</code>，点击新建</li><li>创建新条目</li><li>维护公司的代码</li><li>保存</li></ol><p><strong>或者</strong></p><ol><li>事务代码：<code>OBA3</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223142746.png" alt="20211223142746"></li><li>维护公司代码信息<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223142951.png" alt="20211223142951"></li><li>保存</li></ol><blockquote><p>凭证 100000005 已过账到公司代码 7777 中</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> mm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> mm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP MIRO报错</title>
+      <link href="/posts/972bf459/"/>
+      <url>/posts/972bf459/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SAP-MIRO报错"><a href="#SAP-MIRO报错" class="headerlink" title="SAP MIRO报错"></a>SAP MIRO报错</h1><h2 id="表T169V-表目7777-不存在"><a href="#表T169V-表目7777-不存在" class="headerlink" title="表T169V: 表目7777  不存在"></a>表T169V: 表目7777  不存在</h2><h3 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h3><p><code>MIRO</code> 进行采购订单发票校验的时候，提示<code>表T169V: 表目7777  不存在</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223142054.png" alt="20211223142054"></p><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>发票校验这块的配置有可能缺失了 维护收入发票的缺省值</p><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><ol><li>进入事务代码<code>SE16</code></li><li>输入<code>T169V</code>，点击新建<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223142137.png" alt="20211223142137"></li><li>创建新条目</li><li>维护公司的代码<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223142218.png" alt="20211223142218"></li><li>保存</li></ol><blockquote><p>凭证号5105600111已建立</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> mm </category>
+          
+          <category> miro </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> mm </tag>
+            
+            <tag> miro </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP MIGO错误</title>
+      <link href="/posts/c5c107af/"/>
+      <url>/posts/c5c107af/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SAP-MIGO错误"><a href="#SAP-MIGO错误" class="headerlink" title="SAP MIGO错误"></a>SAP MIGO错误</h1><h2 id="表T169P-表目7777-不存在"><a href="#表T169P-表目7777-不存在" class="headerlink" title="表T169P: 表目7777  不存在"></a>表T169P: 表目7777  不存在</h2><h3 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h3><p><code>MIGO</code> 进行采购订单收货的时候，提示<code>表T169P: 表目7777  不存在</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223131125.png" alt="20211223131125"></p><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>发票校验这块的配置有可能缺失了</p><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><ol><li>进入事务代码<code>OMR8</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223131423.png" alt="20211223131423"></li><li>选择 <code>订单文本：通用</code></li><li>创建新条目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223131540.png" alt="20211223131540"></li><li>保存</li></ol><h2 id="不可能为条目7777-BSX确立帐户"><a href="#不可能为条目7777-BSX确立帐户" class="headerlink" title="不可能为条目7777 BSX确立帐户"></a>不可能为条目7777 BSX确立帐户</h2><h3 id="问题现象-1"><a href="#问题现象-1" class="headerlink" title="问题现象"></a>问题现象</h3><p><code>MIGO</code> 进行采购订单收货-过账的时候，提示<code>不可能为条目7777 BSX确立帐户</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223131833.png" alt="20211223131833"></p><h3 id="原因-1"><a href="#原因-1" class="headerlink" title="原因"></a>原因</h3><p><code>OBYC</code>中没有配置<code>BSX</code><br>系统未找到该事务的科目。这意味着在 MM 定制（评价）中没有维护科目7777 BSX键值确定。</p><h3 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案"></a>解决方案</h3><ol><li>事务代码：<code>OMWD</code></li><li>维护 估价范围的评估分组代码<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223134131.png" alt="20211223134131"></li><li>事务代码：<code>OBYC</code></li><li>选择 业务<code>BSX</code></li><li>勾选 <code>评估修改</code> + <code>评估级别</code></li><li>保存，之后输入数据<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223132539.png" alt="20211223132539"></li><li>保存</li></ol><blockquote><p><code>不可能为条目7777 WRX确立帐户</code><br><code>不可能为条目7777 PRD确立帐户</code><br>也同样处理 <code>OBYC</code></p></blockquote><h2 id="对象-RF-BELEG-7777-FBN1-不存在间隔-50"><a href="#对象-RF-BELEG-7777-FBN1-不存在间隔-50" class="headerlink" title="对象 RF_BELEG 7777 FBN1 不存在间隔 50"></a>对象 RF_BELEG 7777 FBN1 不存在间隔 50</h2><h3 id="问题现象-2"><a href="#问题现象-2" class="headerlink" title="问题现象"></a>问题现象</h3><p><code>MIGO</code> 进行采购订单收货的时候，提示<code>对象 RF_BELEG 7777 FBN1 不存在间隔 50</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223135004.png" alt="20211223135004"></p><h3 id="原因-2"><a href="#原因-2" class="headerlink" title="原因"></a>原因</h3><p>应该是号码段没有配置</p><h3 id="解决方案-2"><a href="#解决方案-2" class="headerlink" title="解决方案"></a>解决方案</h3><ol><li>进入事务代码<code>FBN1</code></li><li>输入公司代码，点击间隔</li><li>维护<code>50</code>号段的编号范围<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223135205.png" alt="20211223135205"></li><li>保存</li></ol><blockquote><p>物料凭证 5000000010 已过帐</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> mm </category>
+          
+          <category> migo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> migo </tag>
+            
+            <tag> mm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP 创建采购订单报错</title>
+      <link href="/posts/4982c1ed/"/>
+      <url>/posts/4982c1ed/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SAP-创建采购订单报错"><a href="#SAP-创建采购订单报错" class="headerlink" title="SAP 创建采购订单报错"></a>SAP 创建采购订单报错</h1><h2 id="物料xxx的强制帐户设置-输入帐户设置类别"><a href="#物料xxx的强制帐户设置-输入帐户设置类别" class="headerlink" title="物料xxx的强制帐户设置 (输入帐户设置类别)"></a>物料xxx的强制帐户设置 (输入帐户设置类别)</h2><h3 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h3><p><code>ME21N</code> 创建采购订单的时候，提示<code>物料12的强制帐户设置 (输入帐户设置类别)</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223112616.png" alt="20211223112616"></p><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>在此工厂中没有此物料类型基于价值的库存管理的备抵。因此帐户分配是十分必要的。</p><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><ol><li>事务代码：<code>OMS2</code></li><li>选中对应的物料类型</li><li>进入<code>数量/价值更新</code></li><li>找到 对应的评估范围，勾上数量更新+值更新<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223112902.png" alt="20211223112902"> </li><li>保存</li></ol><blockquote><p>其他物料类型也是相同的做法</p></blockquote><h2 id="请维护容差码PE-公司代码7777-的容差限制"><a href="#请维护容差码PE-公司代码7777-的容差限制" class="headerlink" title="请维护容差码PE(公司代码7777)的容差限制"></a>请维护容差码PE(公司代码7777)的容差限制</h2><h3 id="问题现象-1"><a href="#问题现象-1" class="headerlink" title="问题现象"></a>问题现象</h3><p><code>ME21N</code> 创建采购订单的时候，提示<code>请维护容差码PE(公司代码7777)的容差限制</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223113650.png" alt="20211223113650"></p><h3 id="原因-1"><a href="#原因-1" class="headerlink" title="原因"></a>原因</h3><p>系统试图检查输入输入是否在特定的限度范围之内。由于尚未维护显示的容差码限制，所以无法进行此操作。</p><h3 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案"></a>解决方案</h3><ol><li>事务代码：<code>OMEU</code></li><li>创建新条目</li><li>维护<code>容差代码PE</code> + 公司代码 + 货币<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223113947.png" alt="20211223113947"></li><li>保存</li></ol><blockquote><p>标准采购订单在号4500000002下被创建</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> mm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> mm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP 供应商后台配置</title>
+      <link href="/posts/60f6ef4e/"/>
+      <url>/posts/60f6ef4e/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SAP-供应商后台配置"><a href="#SAP-供应商后台配置" class="headerlink" title="SAP 供应商后台配置"></a>SAP 供应商后台配置</h1><h2 id="定义供应商账户组"><a href="#定义供应商账户组" class="headerlink" title="定义供应商账户组"></a>定义供应商账户组</h2><blockquote><p>事务代码：<code>OBD3</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223094159.png" alt="20211223094159"></p><ol><li>创建新条目</li><li>维护 账户组 + 名称 + 字段状态信息<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223094329.png" alt="20211223094329"></li><li>保存</li></ol><h2 id="创建供应商账户编号范围"><a href="#创建供应商账户编号范围" class="headerlink" title="创建供应商账户编号范围"></a>创建供应商账户编号范围</h2><blockquote><p>事务代码：<code>XKN1</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223094523.png" alt="20211223094523"></p><ol><li>点击 <code>间隔</code></li><li>新增间隔，维护号段范围<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223094623.png" alt="20211223094623"></li><li>保存</li></ol><h2 id="给供应商账户组分配编号范围"><a href="#给供应商账户组分配编号范围" class="headerlink" title="给供应商账户组分配编号范围"></a>给供应商账户组分配编号范围</h2><blockquote><p>事务代码：<code>OBAS</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223094824.png" alt="20211223094824"></p><ol><li>找到 对应的账户组 </li><li>维护 号码范围<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211223094918.png" alt="20211223094918"></li><li>保存</li></ol><blockquote><p>供应商 0010000005 对于公司代码 7777 采购组织 7777 已被创建</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> mm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> mm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MM01 创建物料报错</title>
+      <link href="/posts/a1e9c06f/"/>
+      <url>/posts/a1e9c06f/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MM01-创建物料报错"><a href="#MM01-创建物料报错" class="headerlink" title="MM01 创建物料报错"></a>MM01 创建物料报错</h1><h2 id="公司代码7777不存在或没有完全维护"><a href="#公司代码7777不存在或没有完全维护" class="headerlink" title="公司代码7777不存在或没有完全维护"></a>公司代码7777不存在或没有完全维护</h2><h3 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h3><p><code>MM01</code> 创建新物料的时候，提示<code>公司代码7777不存在或没有完全维护</code></p><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222194834.png" alt="20211222194834"></p><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>已输入分配到该公司代码的公司代码7777或工厂。但是公司代码不存在或尚未为物料管理配置该公司代码。</p><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><ol><li>点击报错的提示<br> 事务代码：<code>OMSY</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222195026.png" alt="20211222195026"></li><li>输入年度和期间<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222195133.png" alt="20211222195133"></li><li>保存</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> mm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> mm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP 工厂后台配置</title>
+      <link href="/posts/5250dc13/"/>
+      <url>/posts/5250dc13/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SAP-工厂后台配置"><a href="#SAP-工厂后台配置" class="headerlink" title="SAP 工厂后台配置"></a>SAP 工厂后台配置</h1><h2 id="创建工厂"><a href="#创建工厂" class="headerlink" title="创建工厂"></a>创建工厂</h2><blockquote><p>事务代码：<code>OX10</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222171227.png" alt="20211222171227"></p><ol><li>定义工厂</li><li>创建新条目</li><li>维护工厂数据信息<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222171602.png" alt="20211222171602"></li><li>补充维护 工厂地址信息<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222171624.png" alt="20211222171624"></li><li>保存</li></ol><h2 id="定义产品组"><a href="#定义产品组" class="headerlink" title="定义产品组"></a>定义产品组</h2><blockquote><p>事务代码：<code>OVXB</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222182854.png" alt="20211222182854"></p><ol><li>定义产品组</li><li>创建新条目</li><li>输入产品组和产品组名称<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222182946.png" alt="20211222182946"></li><li>保存</li></ol><h2 id="定义销售组织"><a href="#定义销售组织" class="headerlink" title="定义销售组织"></a>定义销售组织</h2><blockquote><p>事务代码：<code>OVX5</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222171855.png" alt="20211222171855"></p><ol><li>定义销售组织</li><li>创建新条目</li><li>维护销售组织数据和地址信息<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222171954.png" alt="20211222171954"></li><li>保存</li></ol><h2 id="定义分销渠道"><a href="#定义分销渠道" class="headerlink" title="定义分销渠道"></a>定义分销渠道</h2><blockquote><p>事务代码：<code>OVXI</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222183124.png" alt="20211222183124"></p><ol><li>定义分销渠道</li><li>创建新条目</li><li>维护分销渠道和名称<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222183242.png" alt="20211222183242"></li><li>保存</li></ol><h2 id="定义采购组织"><a href="#定义采购组织" class="headerlink" title="定义采购组织"></a>定义采购组织</h2><blockquote><p>事务代码：<code>OX08</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222183554.png" alt="20211222183554"></p><ol><li>创建新条目</li><li>维护采购组织和描述<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222183638.png" alt="20211222183638"></li><li>保存</li></ol><h2 id="定义仓库地点"><a href="#定义仓库地点" class="headerlink" title="定义仓库地点"></a>定义仓库地点</h2><blockquote><p>事务代码：<code>OX09</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222183735.png" alt="20211222183735"></p><ol><li>选择 对应的 工厂号</li><li>创建新条目</li><li>增加库存地点编号<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222183912.png" alt="20211222183912"></li><li>保存</li></ol><h2 id="定义起运点"><a href="#定义起运点" class="headerlink" title="定义起运点"></a>定义起运点</h2><blockquote><p>事务代码：<code>OVXD</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222184213.png" alt="20211222184213"></p><ol><li>定义起运点</li><li>创建新条目</li><li>维护运送点信息和地址信息<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222184614.png" alt="20211222184614"></li><li>保存</li></ol><h2 id="维护装载点"><a href="#维护装载点" class="headerlink" title="维护装载点"></a>维护装载点</h2><blockquote><p>事务代码：<code>OVX7</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222184728.png" alt="20211222184728"></p><ol><li>选择 装运点</li><li>创建新条目</li><li>维护装载点+责任人+描述<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222185017.png" alt="20211222185017"></li><li>保存</li></ol><h2 id="工厂维护计划点"><a href="#工厂维护计划点" class="headerlink" title="工厂维护计划点"></a>工厂维护计划点</h2><blockquote><p>事务代码：<code>OIX0</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222185426.png" alt="20211222185426"></p><ol><li>创建新条目</li><li>输入计划工厂<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222185527.png" alt="20211222185527"></li><li>保存</li></ol><h2 id="给公司代码分配工厂"><a href="#给公司代码分配工厂" class="headerlink" title="给公司代码分配工厂"></a>给公司代码分配工厂</h2><blockquote><p>事务代码：<code>OX18</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222185743.png" alt="20211222185743"></p><ol><li>创建新条目</li><li>输入公司代码+工厂<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222185835.png" alt="20211222185835"></li><li>保存</li></ol><h2 id="将业务范围分配到工厂-评估范围和部门"><a href="#将业务范围分配到工厂-评估范围和部门" class="headerlink" title="将业务范围分配到工厂/评估范围和部门"></a>将业务范围分配到工厂/评估范围和部门</h2><blockquote><p>事务代码：<code>OMJ7</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222190038.png" alt="20211222190038"></p><ol><li>选择 <code>工厂 - 部门</code></li><li>创建新条目</li><li>维护 工厂 + 产品组 + 部门<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222190210.png" alt="20211222190210"></li><li>保存</li><li>选择 <code>评估范围 - 部门</code></li><li>创建新条目</li><li>维护 评估范围 + 产品组 + 部门<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222190336.png" alt="20211222190336"></li><li>保存</li></ol><h2 id="销售工厂-评估范围-产品组-业务范围数据比较"><a href="#销售工厂-评估范围-产品组-业务范围数据比较" class="headerlink" title="销售工厂/评估范围 - 产品组 - 业务范围数据比较"></a>销售工厂/评估范围 - 产品组 - 业务范围数据比较</h2><blockquote><p>事务代码：<code>OMJM</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222190512.png" alt="20211222190512"></p><ol><li>执行下就行</li></ol><h2 id="给公司代码分配销售组织"><a href="#给公司代码分配销售组织" class="headerlink" title="给公司代码分配销售组织"></a>给公司代码分配销售组织</h2><blockquote><p>事务代码：<code>OVX3</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222190622.png" alt="20211222190622"></p><ol><li>将缺失的公司代码补充完整<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222190811.png" alt="20211222190811"></li><li>保存</li></ol><h2 id="给销售组织分配分销渠道"><a href="#给销售组织分配分销渠道" class="headerlink" title="给销售组织分配分销渠道"></a>给销售组织分配分销渠道</h2><blockquote><p>事务代码：<code>OVXK</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222191017.png" alt="20211222191017"></p><ol><li>创建新条目</li><li>维护 销售组织 与 分销渠道 对应关系<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222191221.png" alt="20211222191221"></li><li>保存</li></ol><h2 id="给销售组织分配部门"><a href="#给销售组织分配部门" class="headerlink" title="给销售组织分配部门"></a>给销售组织分配部门</h2><blockquote><p>事务代码：<code>OVXA</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222191323.png" alt="20211222191323"></p><ol><li>创建新条目</li><li>维护 销售组织 与 产品组 对应关系<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222191416.png" alt="20211222191416"></li><li>保存</li></ol><h2 id="设置销售范围"><a href="#设置销售范围" class="headerlink" title="设置销售范围"></a>设置销售范围</h2><blockquote><p>事务代码：<code>OVXG</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222191558.png" alt="20211222191558"></p><ol><li>创建新条目</li><li>维护 销售组织 + 分销渠道 + 产品组 对应关系<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222191759.png" alt="20211222191759"></li><li>保存</li></ol><h2 id="给销售范围分配销售办公室"><a href="#给销售范围分配销售办公室" class="headerlink" title="给销售范围分配销售办公室"></a>给销售范围分配销售办公室</h2><blockquote><p>事务代码：<code>OVXM</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222192104.png" alt="20211222192104"></p><ol><li>创建新条目</li><li>维护 销售组织 + 分销渠道 + 产品组 + 办公室<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222192259.png" alt="20211222192259"></li><li>保存</li></ol><h2 id="给销售办公室分配销售组"><a href="#给销售办公室分配销售组" class="headerlink" title="给销售办公室分配销售组"></a>给销售办公室分配销售组</h2><blockquote><p>事务代码：<code>OVXJ</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222192411.png" alt="20211222192411"></p><ol><li>创建新条目</li><li>维护销售办公室 + 销售组对应关系</li><li>保存</li></ol><h2 id="分配销售组织-分销渠道-工厂"><a href="#分配销售组织-分销渠道-工厂" class="headerlink" title="分配销售组织 - 分销渠道 - 工厂"></a>分配销售组织 - 分销渠道 - 工厂</h2><blockquote><p>事务代码：<code>OVX6</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222192552.png" alt="20211222192552"></p><ol><li>创建新条目</li><li>维护销售组织 + 分销渠道 + 工厂 对应关系<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222192659.png" alt="20211222192659"></li><li>保存</li></ol><h2 id="给公司代码分配采购组织"><a href="#给公司代码分配采购组织" class="headerlink" title="给公司代码分配采购组织"></a>给公司代码分配采购组织</h2><blockquote><p>事务代码：<code>OX01</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222192815.png" alt="20211222192815"></p><ol><li>将公司代码补充完整<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222192859.png" alt="20211222192859"></li><li>保存</li></ol><h2 id="给工厂分配采购组织"><a href="#给工厂分配采购组织" class="headerlink" title="给工厂分配采购组织"></a>给工厂分配采购组织</h2><blockquote><p>事务代码：<code>OX17</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222192953.png" alt="20211222192953"></p><ol><li>创建新条目</li><li>维护采购组织 + 工厂 对应关系<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222193042.png" alt="20211222193042"></li><li>保存</li></ol><h2 id="给工厂分配缺省的采购组织"><a href="#给工厂分配缺省的采购组织" class="headerlink" title="给工厂分配缺省的采购组织"></a>给工厂分配缺省的采购组织</h2><blockquote><p>事务代码：<code>OMKI</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222193147.png" alt="20211222193147"></p><ol><li>将采购组织补充完整<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222193221.png" alt="20211222193221"></li><li>保存</li></ol><h2 id="给工厂-存储地点分配仓库编码"><a href="#给工厂-存储地点分配仓库编码" class="headerlink" title="给工厂/存储地点分配仓库编码"></a>给工厂/存储地点分配仓库编码</h2><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222193319.png" alt="20211222193319"></p><ol><li>创建新条目</li><li>维护 工厂 + 库位 + 仓库编码 对应关系<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222193504.png" alt="20211222193504"></li><li>保存</li></ol><h2 id="给工厂分配起运点"><a href="#给工厂分配起运点" class="headerlink" title="给工厂分配起运点"></a>给工厂分配起运点</h2><blockquote><p>事务代码：<code>OVXC</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222193612.png" alt="20211222193612"></p><ol><li>选中 工厂， 点击 分配</li><li>选中 对应的 装运点<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222193736.png" alt="20211222193736"></li><li>保存</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> pp </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> pp </tag>
+            
+            <tag> config </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FICO 设置总账科目组的容差组</title>
+      <link href="/posts/a63d0514/"/>
+      <url>/posts/a63d0514/</url>
+      
+        <content type="html"><![CDATA[<h1 id="FICO-设置总账科目组的容差组"><a href="#FICO-设置总账科目组的容差组" class="headerlink" title="FICO 设置总账科目组的容差组"></a>FICO 设置总账科目组的容差组</h1><h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><p><code>F-03</code>的时候，提示<br>在表T043S中,7777  的输入丢失<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222144228.png" alt="20211222144228"></p><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>我们未在公司代码下配置总账科目的容差组</p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>设置总账科目的容差组<br>事务代码：``<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222144440.png" alt="20211222144440"></p><ol><li>创建新条目</li><li>输入公司代码<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222144550.png" alt="20211222144550"></li><li>保存</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> fico </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> fico </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FICO 财务基础操作</title>
+      <link href="/posts/209e8d65/"/>
+      <url>/posts/209e8d65/</url>
+      
+        <content type="html"><![CDATA[<h1 id="FICO-财务基础操作"><a href="#FICO-财务基础操作" class="headerlink" title="FICO 财务基础操作"></a>FICO 财务基础操作</h1><h2 id="T-Codes"><a href="#T-Codes" class="headerlink" title="T-Codes:"></a>T-Codes:</h2><p><code>F-02</code> 输入总帐科目记帐</p><p><code>FB01</code> 过帐凭证<br><code>FB02</code> 修改凭证<br><code>FB03</code> 显示凭证<br><code>FB05</code> 过帐并清帐<br><code>FB08</code> 冲销凭证</p><p><code>FB50</code> 预制的凭证需要使用<code>FV50</code> 过账</p><p>模型凭证 <code>FKMT</code> 先创建模型，后期<code>F-02</code> 直接调用 保存生成凭证</p><p>周期性凭证<code>FBD1</code>, 先创建周期性凭证，<code>F.14</code>执行，创建会话，  <code>SM35</code>执行会话</p><p><code>F-03</code> 未清项管理清账<br><code>F.13</code> 未清项自动清账</p><p><code>F-44</code> 供应商未清项管理<br><code>F-53</code> 给供应商付款</p><p><code>F-47</code> 预付款<strong>请求</strong><br><code>F-48</code> 支付预付款请求</p><p><code>FBKP</code> 维护科目设置 （集成配置点）</p><p><code>FBZP</code> 维护收付程序设置</p><p>给供应商预付定金步骤</p><ol><li><code>F-47</code></li><li><code>F-48</code></li><li><code>ME21N</code></li><li><code>MIGO</code></li><li><code>MIRO</code></li><li><code>F-53</code><br>可以用<code>FBL1N</code>查看剩余未清金额</li></ol><p>员工借款/报销步骤<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211224113744.png" alt="20211224113744"></p><hr><h2 id="Tables"><a href="#Tables" class="headerlink" title="Tables:"></a>Tables:</h2><p><code>BSIS</code> 总账未清项后台表<br><code>BSAS</code> 总账已清项后台表</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> fico </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> fico </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FICO 设置销项税/进项税科目</title>
+      <link href="/posts/dba6b249/"/>
+      <url>/posts/dba6b249/</url>
+      
+        <content type="html"><![CDATA[<h1 id="FICO-设置销项税-进项税科目"><a href="#FICO-设置销项税-进项税科目" class="headerlink" title="FICO 设置销项税/进项税科目"></a>FICO 设置销项税/进项税科目</h1><h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><p>交易码 VST  会计科目表 7777 没有在表 T030R 中定义<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222100612.png" alt="20211222100612"></p><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>我们未在公司代码下配置进项税科目</p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>设置销项税/进项税科目<br>事务代码：<code>OB40</code></p><ol><li>找到事务<code>VST</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222100921.png" alt="20211222100921"></li><li>双击， 选中自己的科目表 </li><li>保存只会，系统会让你输入 进项税科目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222101028.png" alt="20211222101028"></li><li>保存退出</li></ol><div class="note primary simple"><p>交易码 MWS 销项税 同样的处理方式</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> fico </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> fico </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FICO 快速拷贝科目</title>
+      <link href="/posts/2c40600a/"/>
+      <url>/posts/2c40600a/</url>
+      
+        <content type="html"><![CDATA[<h1 id="FICO-快速拷贝科目"><a href="#FICO-快速拷贝科目" class="headerlink" title="FICO 快速拷贝科目"></a>FICO 快速拷贝科目</h1><ol><li>输入事务代码：<code>FS15</code>，填写总账科目和公司代码，输出的文件名<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/5cd50a640ed6afe5fef06d4486597b75.png" alt="5cd50a640ed6afe5fef06d4486597b75"></li><li>点击确认，会出现一个路径的消息，记住他  （我的路径：/usr/sap/MSQ/SYS/global/FBIScn00 ）<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/3bacf157f21251535fe04cd54f751d5c.png" alt="3bacf157f21251535fe04cd54f751d5c"><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/b3e7140cac92f6e9f63fc6fdbd18dbab.png" alt="b3e7140cac92f6e9f63fc6fdbd18dbab"></li><li>输入事务代码 <code>CG3Y</code>，将刚刚生成的文件下载下来<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/2871dcb7ec991cd51fb077159f6ee891.png" alt="2871dcb7ec991cd51fb077159f6ee891"></li><li>去需要上载的服务器的界面上，输入事务代码<code>CG3Z</code>，勾上 覆盖文件<blockquote><p>如果不知道应用服务器上的目标文件的路径，就先FS15下载下，将路径记录下来。<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/b18edd6dd878e2d7072a7ca29b883c20.png" alt="b18edd6dd878e2d7072a7ca29b883c20"></p></blockquote></li><li>已成功上载，即将大功告成。<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/23bdaa650e4c0e1b20db9c1353257b25.png" alt="23bdaa650e4c0e1b20db9c1353257b25"></li><li>输入事务代码 <code>FS16</code>，填写文件名，目标公司代码 ，勾选 马上更新文件<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/475fb289bc87b03335dec698b02dceae.png" alt="475fb289bc87b03335dec698b02dceae"></li></ol><div class="note default simple"><p>过程中发现读取不到 E:\usr\sap\ER1\SYS\global\FBIScn00，应该是我之前使用FS15的生成的文件名称叫wtny，我上服务器查看，发现并没有FBIScn00， 只有 FBISwtny， 于是就将文件名改 wtny ，就可以成功导入了。</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> fico </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> fico </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FICO 配置科目</title>
+      <link href="/posts/b8c09287/"/>
+      <url>/posts/b8c09287/</url>
+      
+        <content type="html"><![CDATA[<h1 id="FICO-配置科目"><a href="#FICO-配置科目" class="headerlink" title="FICO 配置科目"></a>FICO 配置科目</h1><h2 id="查看科目树形结构"><a href="#查看科目树形结构" class="headerlink" title="查看科目树形结构"></a>查看科目树形结构</h2><p>事务代码：<code>FS00</code><br>在<code>工具栏 - 设置 - 层次结构显示</code>，选择 <strong>显示导航树中的账户</strong>，确认，重新打开事务代码</p><h2 id="科目创建"><a href="#科目创建" class="headerlink" title="科目创建"></a>科目创建</h2><p>科目创建一般有两种方式</p><ol><li><code>FSP0</code> - 创建科目表层 </li><li><code>FSS0</code> - 创建公司代码层</li></ol><p>或者直接</p><ol><li><code>FS00</code> - 同时创建科目层+公司代码层</li></ol><h2 id="科目的拷贝"><a href="#科目的拷贝" class="headerlink" title="科目的拷贝"></a>科目的拷贝</h2><p>同一个客户端下面，不同的公司代码间拷贝</p><ol><li><p>事务代码<code>FS15</code></p><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221162844.png" alt="20211221162844"></p></li><li><p>事务代码<code>OBY2</code></p><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221162606.png" alt="20211221162606"></p></li></ol><p>不同的服务器上，可以参考另一个博客</p><blockquote><p><a href="http://blog.yanleidong.top/posts/2c40600a/">http://blog.yanleidong.top/posts/2c40600a/</a></p></blockquote><h2 id="科目删除"><a href="#科目删除" class="headerlink" title="科目删除"></a>科目删除</h2><p>事务代码：<code>OBR2</code></p><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221165421.png" alt="20211221165421"></p><h2 id="业务数据删除（手动狗头）"><a href="#业务数据删除（手动狗头）" class="headerlink" title="业务数据删除（手动狗头）"></a>业务数据删除（手动狗头）</h2><p>事务代码：<code>OBR1</code></p><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222085501.png" alt="20211222085501"></p><p>但是我们可以使用 事务代码<code>OBR3</code>，将公司代码设置为生产性的，这样<code>OBR1</code>就不能直接删除了。</p><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211222100206.png" alt="20211222100206"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> fico </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> fico </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FICO 公司后台配置</title>
+      <link href="/posts/b0477d03/"/>
+      <url>/posts/b0477d03/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Fico-公司后台配置"><a href="#Fico-公司后台配置" class="headerlink" title="Fico 公司后台配置"></a>Fico 公司后台配置</h1><blockquote><p>以下配置基本都是在事务代码 <code>SPRO</code> 中完成<br>关于如何查看SPRO中的事务代码，<br><code>工具栏 - 附加信息 - 附加信息 - 显示关键字 - 属性</code>，一般都是后面倒数4位代码</p></blockquote><h2 id="创建公司"><a href="#创建公司" class="headerlink" title="创建公司"></a>创建公司</h2><blockquote><p>事务代码：<code>OX15</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221113302.png" alt="创建公司"></p><ol><li>创建新条目</li><li>输入公司相关信息<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221113829.png" alt="输入公司相关信息"></li><li>保存</li></ol><h2 id="创建公司代码"><a href="#创建公司代码" class="headerlink" title="创建公司代码"></a>创建公司代码</h2><blockquote><p>事务代码：<code>OX02</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221114310.png" alt="创建公司代码"></p><ol><li>选择<code>编辑公司代码数据</code> ，也可以直接复制其他的公司代码</li><li>创建新条目</li><li>输入公司代码相关信息<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221114526.png" alt="输入公司代码相关信息"></li><li>保存，继续输入<code>公司地址相关信息</code><br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221114701.png" alt="公司地址相关信息"></li><li>保存</li></ol><h2 id="创建信贷控制范围"><a href="#创建信贷控制范围" class="headerlink" title="创建信贷控制范围"></a>创建信贷控制范围</h2><blockquote><p>事务代码：<code>OB45</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221130744.png" alt="创建信贷控制范围"></p><ol><li>创建新条目</li><li>输入信贷控制范围相关数据<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221130909.png" alt="输入信贷控制范围相关数据"></li><li>保存</li></ol><h2 id="给公司代码分配公司"><a href="#给公司代码分配公司" class="headerlink" title="给公司代码分配公司"></a>给公司代码分配公司</h2><blockquote><p>事务代码：<code>OX16</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221131452.png" alt="给公司代码分配公司"></p><ol><li>找到自己创建的公司代码<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221131624.png" alt="找到自己创建的公司代码"></li><li>将公司填写上</li><li>保存</li><li><h2 id="给信贷控制区分配公司代码"><a href="#给信贷控制区分配公司代码" class="headerlink" title="给信贷控制区分配公司代码"></a>给信贷控制区分配公司代码</h2><blockquote><p>事务代码：<code>OB38</code></p></blockquote></li></ol><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221131750.png" alt="给信贷控制区分配公司代码"></p><ol><li>找到自己创建的公司代码<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221131949.png" alt="找到自己创建的公司代码"></li><li>将信贷控制范围写上</li><li>保存</li></ol><h2 id="定义字段状态变式"><a href="#定义字段状态变式" class="headerlink" title="定义字段状态变式"></a>定义字段状态变式</h2><blockquote><p>事务代码：<code>OBC4</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221132729.png" alt="定义字段状态变式"></p><ol><li>创建新条目</li><li>输入变式+变式名称<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221134020.png" alt="输入变式+变式名称"></li><li>选择<code>刚刚创建的变式</code>，点击字段状态组<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221134120.png" alt="字段状态组"></li><li>创建新条目</li><li>根据蓝图调研结果，自行添加<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221134432.png" alt="20211221134432"></li><li>双击<code>字段状态组 G001</code>，可以对屏幕字段进行配置（哪些需要显示，哪些需要必输）<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221134617.png" alt="20211221134617"></li></ol><h2 id="向字段状态变式分配公司代码"><a href="#向字段状态变式分配公司代码" class="headerlink" title="向字段状态变式分配公司代码"></a>向字段状态变式分配公司代码</h2><blockquote><p>事务代码：<code>OBC5</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221141822.png" alt="向字段状态变式分配公司代码"></p><ol><li>找到自己创建的公司代码</li><li>将字段状态变式写上<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221141944.png" alt="字段状态变式"></li><li>保存</li></ol><h2 id="向一个会计年度变式分配公司代码"><a href="#向一个会计年度变式分配公司代码" class="headerlink" title="向一个会计年度变式分配公司代码"></a>向一个会计年度变式分配公司代码</h2><blockquote><p>事务代码：<code>OB37</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221143023.png" alt="向一个会计年度变式分配公司代码"></p><ol><li>找到自己创建的公司代码</li><li>将财年变式写上<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221143153.png" alt="20211221143153"></li><li>保存</li></ol><h2 id="定义未结清过帐期间变式"><a href="#定义未结清过帐期间变式" class="headerlink" title="定义未结清过帐期间变式"></a>定义未结清过帐期间变式</h2><blockquote><p>事务代码：<code>OBBO</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221143603.png" alt="20211221143603"></p><ol><li>创建新条目</li><li>填写过账期间变式+名称<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221143713.png" alt="20211221143713"></li><li>保存</li></ol><h2 id="将变式分配给公司代码"><a href="#将变式分配给公司代码" class="headerlink" title="将变式分配给公司代码"></a>将变式分配给公司代码</h2><blockquote><p>事务代码：<code>OBBP</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221143808.png" alt="20211221143808"></p><ol><li>找到自己创建的公司代码</li><li>将过账期间变式写上<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221143907.png" alt="20211221143907"></li><li>保存</li></ol><h2 id="未清和关帐过帐期间"><a href="#未清和关帐过帐期间" class="headerlink" title="未清和关帐过帐期间"></a>未清和关帐过帐期间</h2><blockquote><p>事务代码：<code>OB52</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221144106.png" alt="20211221144106"></p><ol><li>输入自己的记账期间变式</li><li>创建新条目</li><li><p>输入相关信息</p><blockquote><p>+    对所有帐户类型都有效<br>A    资产<br>D    客户<br>K    供应商<br>M    物料<br>S    总账科目<br>V    合同帐户</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221144314.png" alt="20211221144314"></p></li><li>保存</li></ol><h2 id="定义条目视图的凭证编号范围"><a href="#定义条目视图的凭证编号范围" class="headerlink" title="定义条目视图的凭证编号范围"></a>定义条目视图的凭证编号范围</h2><blockquote><p>事务代码：<code>FBN1</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221144847.png" alt="20211221144847"></p><ol><li>选中自己的公司代码</li><li>点击<code>间隔</code>，创建凭证号段范围<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221145326.png" alt="20211221145326"></li><li>保存   </li></ol><h2 id="创建科目表"><a href="#创建科目表" class="headerlink" title="创建科目表"></a>创建科目表</h2><blockquote><p>事务代码：<code>OB13</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221145649.png" alt="20211221145649"></p><ol><li>创建新条目</li><li>输入 科目表 相关数据<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221145753.png" alt="20211221145753"></li><li>保存</li></ol><h2 id="给科目表分配公司代码"><a href="#给科目表分配公司代码" class="headerlink" title="给科目表分配公司代码"></a>给科目表分配公司代码</h2><blockquote><p>事务代码：<code>OB62</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221150010.png" alt="20211221150010"></p><ol><li>找到自己创建的公司代码</li><li>维护 账目表<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221150057.png" alt="20211221150057"></li><li>保存</li></ol><h2 id="定义科目组"><a href="#定义科目组" class="headerlink" title="定义科目组"></a>定义科目组</h2><blockquote><p>事务代码：<code>OBD4</code><br>可以科目进行分组，控制科目编号范围</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221150411.png" alt="20211221150411"></p><ol><li>创建新条目</li><li>输入科目表 + 科目组<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221150515.png" alt="20211221150515"></li><li>保存</li></ol><h2 id="定义留存收益科目"><a href="#定义留存收益科目" class="headerlink" title="定义留存收益科目"></a>定义留存收益科目</h2><blockquote><p>事务代码：<code>OB53</code></p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221150817.png" alt="20211221150817"></p><ol><li>选中 自己创建的科目表</li><li>填写 所有者权益类科目<br><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211221150950.png" alt="20211221150950"></li><li>保存</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> fico </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> fico </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP直接读取长文本的方法</title>
+      <link href="/posts/8c7ec4c2/"/>
+      <url>/posts/8c7ec4c2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SAP直接读取长文本的方法"><a href="#SAP直接读取长文本的方法" class="headerlink" title="SAP直接读取长文本的方法"></a>SAP直接读取长文本的方法</h1><h2 id="第一种，使用函数READ-TEXT"><a href="#第一种，使用函数READ-TEXT" class="headerlink" title="第一种，使用函数READ_TEXT"></a>第一种，使用函数<code>READ_TEXT</code></h2><h2 id="第二种，"><a href="#第二种，" class="headerlink" title="第二种，"></a>第二种，</h2><blockquote><p><a href="https://blog.csdn.net/qq_30797051/article/details/120890827">https://blog.csdn.net/qq_30797051/article/details/120890827</a></p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">DATA: BEGIN OF L_STXL,</span><br><span class="line">        TDOBJECT TYPE STXL-TDOBJECT,</span><br><span class="line">        TDNAME   TYPE STXL-TDNAME,</span><br><span class="line">        TDID     TYPE STXL-TDID,</span><br><span class="line">        TDSPRAS  TYPE STXL-TDSPRAS,</span><br><span class="line">      END OF L_STXL.</span><br><span class="line"></span><br><span class="line">L_STXL-TDOBJECT = &#x27;MATERIAL&#x27;.</span><br><span class="line">L_STXL-TDNAME   = &#x27;SG23&#x27;.</span><br><span class="line">L_STXL-TDID     = &#x27;BEST&#x27;.</span><br><span class="line">L_STXL-TDSPRAS  = &#x27;1&#x27;.</span><br><span class="line"></span><br><span class="line">DATA: E_TEXT_LINES TYPE TABLE OF TLINE.</span><br><span class="line"></span><br><span class="line">IMPORT TLINE TO E_TEXT_LINES</span><br><span class="line">FROM DATABASE STXL(TX)                                 &quot;#EC DBACCESS_OK</span><br><span class="line">CLIENT   SY-MANDT</span><br><span class="line">ID       L_STXL</span><br><span class="line">ACCEPTING TRUNCATION                     &quot;important for Unicode-&gt;Nonunicode</span><br><span class="line">IGNORING CONVERSION ERRORS.</span><br><span class="line"></span><br><span class="line">CL_DEMO_OUTPUT=&gt;DISPLAY( E_TEXT_LINES ).</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> abap </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> abap </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BAPI MIGO GMCode</title>
+      <link href="/posts/8d9aaa78/"/>
+      <url>/posts/8d9aaa78/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MIGO-GMCode"><a href="#MIGO-GMCode" class="headerlink" title="MIGO GMCode"></a>MIGO GMCode</h1><p>忘记看的哪里的blog了  <img no-lazy class="inline" src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo@1.0/img/20211208102526.png" style="height:80px;"/></p><p>调用物料移动的Bapi需要用到GMCode</p><p><code>BAPI_GOODSMVT_CREATE</code> 里面需要传入 <code>GOODSMVT_CODE</code>参数</p><p>There is not a GMCODE for transaction MIGO in table T158G.<br>You have the list of equivalences in the table T158G:<br>GMCODE TCODE<br>01          MB01<br>02          MB31<br>03          MB1A<br>04          MB1B<br>05          MB1C<br>06          MB11<br>07          MB04<br>GM_Code 01: Goods receipt for purchase order<br>GM_Code 02: Goods receipt for production order<br>GM_Code 03: Goods issue<br>GM_Code 04: Transfer posting<br>GM_Code 05: Other goods receipts<br>GM_Code 06: Reversal of goods movements<br>GM_Code 07: Subsequent adjustment to a subcontract order</p><p>BAPI_MATPHYSINV_CHANGECOUNT Change count for particular items of a phys. inv. doc.<br>BAPI_MATPHYSINV_COUNT Enter count for particular items of a phys. inv. doc.<br>BAPI_MATPHYSINV_CREATE Create physical inventory document<br>BAPI_MATPHYSINV_CREATE_MULT Create physical inventory document<br>BAPI_MATPHYSINV_GETDETAIL Read items for a physical inventory document<br>BAPI_MATPHYSINV_GETITEMS Read list of physical inventory documents with items<br>BAPI_MATPHYSINV_GETLIST Read list of phys. inv. documents<br>BAPI_MATPHYSINV_POSTDIFF Post differences for certain items in a phys. inv. document</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> abap </category>
+          
+          <category> migo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> abap </tag>
+            
+            <tag> migo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>选择屏幕字段，悬停提示</title>
+      <link href="/posts/3a3edc16/"/>
+      <url>/posts/3a3edc16/</url>
+      
+        <content type="html"><![CDATA[<h1 id="选择屏幕字段上，鼠标悬停出现提示文本"><a href="#选择屏幕字段上，鼠标悬停出现提示文本" class="headerlink" title="选择屏幕字段上，鼠标悬停出现提示文本"></a>选择屏幕字段上，鼠标悬停出现提示文本</h1><p>用  <code>@</code> <code>图标的代码</code> <code>\Q</code> <code>提示信息</code> <code>@</code> <code>字段描述</code>拼接起来</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">PARAMETERS: P_WERKS TYPE WERKS_D.</span><br><span class="line"></span><br><span class="line">INITIALIZATION.</span><br><span class="line">  %_P_WERKS_%_APP_%-TEXT = &#x27;@5F\Q 这是tip @工厂&#x27;.</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211208085152.png" alt=""></p><p>感觉就是给图标加了个提示哈哈哈哈</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> abap </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> abap </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ABAP函数</title>
+      <link href="/posts/641b1598/"/>
+      <url>/posts/641b1598/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ABAP函数"><a href="#ABAP函数" class="headerlink" title="ABAP函数"></a>ABAP函数</h1><div class="note info simple"><p>慢慢更新吧~~~~</p><p>具体的参数，需要自己SE37查看</p></div><h2 id="SD"><a href="#SD" class="headerlink" title="SD"></a>SD</h2><h3 id="修改销售订单"><a href="#修改销售订单" class="headerlink" title="修改销售订单"></a>修改销售订单</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;BAPI_SALESORDER_CHANGE&#x27;</span><br><span class="line">  EXPORTING</span><br><span class="line">    salesdocument    = pv_vbeln</span><br><span class="line">    order_header_inx = ls_order_header_in</span><br><span class="line">  TABLES</span><br><span class="line">    return           = lt_return</span><br><span class="line">    order_item_in    = lt_order_item_in</span><br><span class="line">    order_item_inx   = lt_order_item_inx.</span><br></pre></td></tr></table></figure><h2 id="PP"><a href="#PP" class="headerlink" title="PP"></a>PP</h2><h3 id="获取生产订单详细"><a href="#获取生产订单详细" class="headerlink" title="获取生产订单详细"></a>获取生产订单详细</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;BAPI_PRODORD_GET_DETAIL&#x27;</span><br><span class="line">    EXPORTING</span><br><span class="line">      number        = ls_mes_prodord_head-aufnr</span><br><span class="line">      order_objects = ls_order_objects</span><br><span class="line">    IMPORTING</span><br><span class="line">      return        = ls_return</span><br><span class="line">    TABLES</span><br><span class="line">      operation     = lt_operation</span><br></pre></td></tr></table></figure><h3 id="生产订单打上删除标识"><a href="#生产订单打上删除标识" class="headerlink" title="生产订单打上删除标识"></a>生产订单打上删除标识</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;BAPI_PRODORD_SET_DELETION_FLAG&#x27;</span><br><span class="line">    TABLES</span><br><span class="line">      orders        = lt_orders</span><br><span class="line">      detail_return = lt_detail_return.</span><br></pre></td></tr></table></figure><h3 id="生产订单报工取消"><a href="#生产订单报工取消" class="headerlink" title="生产订单报工取消"></a>生产订单报工取消</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;BAPI_PRODORDCONF_CANCEL&#x27;</span><br><span class="line">      EXPORTING</span><br><span class="line">        confirmation        = wa_rueck-rueck</span><br><span class="line">        confirmationcounter = wa_rueck-rmzhl</span><br><span class="line">      IMPORTING</span><br><span class="line">        return              = ls_return.</span><br></pre></td></tr></table></figure><h3 id="创建计划订单"><a href="#创建计划订单" class="headerlink" title="创建计划订单"></a>创建计划订单</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;BAPI_PLANNEDORDER_CREATE&#x27;</span><br><span class="line">    EXPORTING</span><br><span class="line">      headerdata   = ps_headerdata</span><br><span class="line">    IMPORTING</span><br><span class="line">      return       = ls_return</span><br><span class="line">      plannedorder = pv_plannedorder.</span><br></pre></td></tr></table></figure><h3 id="修改计划订单"><a href="#修改计划订单" class="headerlink" title="修改计划订单"></a>修改计划订单</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;BAPI_PLANNEDORDER_CHANGE&#x27;</span><br><span class="line">    EXPORTING</span><br><span class="line">      plannedorder = pv_plannedorder</span><br><span class="line">      headerdata   = ps_headerdata</span><br><span class="line">      headerdatax  = ps_headerdatax</span><br><span class="line">    IMPORTING</span><br><span class="line">      return       = ls_return.</span><br></pre></td></tr></table></figure><h3 id="删除计划订单"><a href="#删除计划订单" class="headerlink" title="删除计划订单"></a>删除计划订单</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;BAPI_PLANNEDORDER_DELETE&#x27;</span><br><span class="line">    EXPORTING</span><br><span class="line">      plannedorder = pv_plannedorder</span><br><span class="line">    IMPORTING</span><br><span class="line">      return       = ls_return.</span><br></pre></td></tr></table></figure><h3 id="创建生产订单"><a href="#创建生产订单" class="headerlink" title="创建生产订单"></a>创建生产订单</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;BAPI_PRODORD_CREATE&#x27;</span><br><span class="line">    EXPORTING</span><br><span class="line">      orderdata    = ls_orderdata</span><br><span class="line">    IMPORTING</span><br><span class="line">      return       = ls_return</span><br><span class="line">      order_number = lv_order_number.</span><br></pre></td></tr></table></figure><h3 id="读取生产订单抬头文本"><a href="#读取生产订单抬头文本" class="headerlink" title="读取生产订单抬头文本"></a>读取生产订单抬头文本</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;CO_DB_HEADER_READ&#x27;</span><br><span class="line">  EXPORTING</span><br><span class="line">    aufnr     = lv_aufnr3</span><br><span class="line">  IMPORTING</span><br><span class="line">    caufvwa   = ls_caufv</span><br><span class="line">  EXCEPTIONS</span><br><span class="line">    not_found = 1.</span><br></pre></td></tr></table></figure><h3 id="修改预留"><a href="#修改预留" class="headerlink" title="修改预留"></a>修改预留</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;MB_CHANGE_RESERVATION&#x27;</span><br><span class="line">    EXPORTING</span><br><span class="line">      change_resb = &#x27;X&#x27;</span><br><span class="line">      change_rkpf = &#x27;&#x27;</span><br><span class="line">      new_resb    = &#x27;X&#x27;</span><br><span class="line">    TABLES</span><br><span class="line">      xresb       = lt_xresb</span><br><span class="line">      xresbn      = lt_xresbn. </span><br></pre></td></tr></table></figure><h3 id="获取生产订单状态"><a href="#获取生产订单状态" class="headerlink" title="获取生产订单状态"></a>获取生产订单状态</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">STATUS_READ</span><br></pre></td></tr></table></figure><h3 id="读取生产订单状态文本"><a href="#读取生产订单状态文本" class="headerlink" title="读取生产订单状态文本"></a>读取生产订单状态文本</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">STATUS_TEXT_EDIT </span><br></pre></td></tr></table></figure><h3 id="反查BOM数据"><a href="#反查BOM数据" class="headerlink" title="反查BOM数据"></a>反查BOM数据</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;CS_WHERE_USED_MAT&#x27;</span><br><span class="line">    EXPORTING</span><br><span class="line">      datub                      = sy-datum</span><br><span class="line">      datuv                      = sy-datum</span><br><span class="line">      matnr                      = pv_matnr</span><br><span class="line">*     POSTP                      = &#x27; &#x27;</span><br><span class="line">*     RETCODE_ONLY               = &#x27; &#x27;</span><br><span class="line">*     STLAN                      = &#x27; &#x27;</span><br><span class="line">      werks                      = pv_werks</span><br><span class="line">*     MCLMT                      = &#x27; &#x27;</span><br><span class="line">*     MNSTL                      = &#x27; &#x27;</span><br><span class="line">*     MXSTL                      = &#x27; &#x27;</span><br><span class="line">*     STLTP                      = &#x27; &#x27;</span><br><span class="line">*     NEWSI                      = &#x27; &#x27;</span><br><span class="line">* IMPORTING</span><br><span class="line">*     TOPMAT                     =</span><br><span class="line">    TABLES</span><br><span class="line">      wultb                      = pt_wultb</span><br><span class="line">*     equicat                    = lt_equicat</span><br><span class="line">*     kndcat                     = lt_kndcat</span><br><span class="line">*     matcat                     = lt_matcat</span><br><span class="line">*     stdcat                     = lt_stdcat</span><br><span class="line">*     tplcat                     = lt_tplcat</span><br><span class="line">*     prjcat                     = lt_prjcat</span><br><span class="line">    EXCEPTIONS</span><br><span class="line">      call_invalid               = 1</span><br><span class="line">      material_not_found         = 2</span><br><span class="line">      no_where_used_rec_found    = 3</span><br><span class="line">      no_where_used_rec_selected = 4</span><br><span class="line">      no_where_used_rec_valid    = 5</span><br><span class="line">      OTHERS                     = 6.</span><br><span class="line">  IF sy-subrc &lt;&gt; 0.</span><br><span class="line">  ENDIF.</span><br></pre></td></tr></table></figure><h3 id="读取BOM-单级"><a href="#读取BOM-单级" class="headerlink" title="读取BOM - 单级"></a>读取BOM - 单级</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CSAP_MAT_BOM_READ</span><br></pre></td></tr></table></figure><h3 id="读取BOM-多级"><a href="#读取BOM-多级" class="headerlink" title="读取BOM - 多级"></a>读取BOM - 多级</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;CS_BOM_EXPL_MAT_V2&#x27;</span><br><span class="line">    EXPORTING</span><br><span class="line">      capid                 = &#x27;PP01&#x27;</span><br><span class="line">      datuv                 = sy-datum</span><br><span class="line">      mehrs                 = &#x27;&#x27;</span><br><span class="line">      mtnrv                 = ps_dmes_mast-matnr</span><br><span class="line">      stlal                 = &#x27;01&#x27;</span><br><span class="line">      stlan                 = &#x27;1&#x27;</span><br><span class="line">      werks                 = ps_dmes_mast-werks</span><br><span class="line">    TABLES</span><br><span class="line">      stb                   = lt_stb</span><br><span class="line">    EXCEPTIONS</span><br><span class="line">      alt_not_found         = 1</span><br><span class="line">      call_invalid          = 2</span><br><span class="line">      material_not_found    = 3</span><br><span class="line">      missing_authorization = 4</span><br><span class="line">      no_bom_found          = 5</span><br><span class="line">      no_plant_data         = 6</span><br><span class="line">      no_suitable_bom_found = 7</span><br><span class="line">      conversion_error      = 8</span><br><span class="line">      OTHERS                = 9.</span><br><span class="line">  IF sy-subrc &lt;&gt; 0.</span><br><span class="line">    pv_msg = &#x27;BOM展开失败&#x27;.</span><br><span class="line">    EXIT.</span><br><span class="line">  ENDIF.</span><br></pre></td></tr></table></figure><h2 id="MM"><a href="#MM" class="headerlink" title="MM"></a>MM</h2><h3 id="物料移动"><a href="#物料移动" class="headerlink" title="物料移动"></a>物料移动</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;BAPI_GOODSMVT_CREATE&#x27;</span><br><span class="line">  EXPORTING</span><br><span class="line">    goodsmvt_header  = ls_goodsmvt_header</span><br><span class="line">    goodsmvt_code    = &#x27;04&#x27;</span><br><span class="line">  IMPORTING</span><br><span class="line">    goodsmvt_headret = ls_goodsmvt_headret</span><br><span class="line">  TABLES</span><br><span class="line">    goodsmvt_item    = lt_goodsmvt_item</span><br><span class="line">    return           = lt_return.</span><br></pre></td></tr></table></figure><h3 id="修改采购申请"><a href="#修改采购申请" class="headerlink" title="修改采购申请"></a>修改采购申请</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;BAPI_PR_CHANGE&#x27;</span><br><span class="line">  EXPORTING</span><br><span class="line">    number  = pv_banfn</span><br><span class="line">  TABLES</span><br><span class="line">    return  = lt_return</span><br><span class="line">    pritem  = lt_pritem</span><br><span class="line">    pritemx = lt_pritemx.</span><br></pre></td></tr></table></figure><h3 id="发票校验"><a href="#发票校验" class="headerlink" title="发票校验"></a>发票校验</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">call function &#x27;BAPI_INCOMINGINVOICE_PARK&#x27;</span><br><span class="line">  exporting</span><br><span class="line">    headerdata       = ls_headerdata</span><br><span class="line">    addressdata      = ls_addressdata</span><br><span class="line">  importing</span><br><span class="line">    invoicedocnumber = cv_belnr</span><br><span class="line">    fiscalyear       = cv_gjahr</span><br><span class="line">  tables</span><br><span class="line">    itemdata         = lt_itemdata[]</span><br><span class="line">    taxdata          = lt_taxdata[]</span><br><span class="line">    return           = lt_return[].</span><br></pre></td></tr></table></figure><h3 id="物料单位数量转换"><a href="#物料单位数量转换" class="headerlink" title="物料单位数量转换"></a>物料单位数量转换</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;MD_CONVERT_MATERIAL_UNIT&#x27;</span><br><span class="line">  EXPORTING</span><br><span class="line">    i_matnr              = pv_matnr</span><br><span class="line">    i_in_me              = pv_meins</span><br><span class="line">    i_out_me             = pv_erfme</span><br><span class="line">    i_menge              = pv_bdmng</span><br><span class="line">  IMPORTING</span><br><span class="line">    e_menge              = pv_erfmg</span><br><span class="line">  EXCEPTIONS</span><br><span class="line">    error_in_application = 1</span><br><span class="line">    error                = 2</span><br><span class="line">    OTHERS               = 3.</span><br></pre></td></tr></table></figure><h2 id="时间相关"><a href="#时间相关" class="headerlink" title="时间相关"></a>时间相关</h2><h3 id="获取当月最后一天"><a href="#获取当月最后一天" class="headerlink" title="获取当月最后一天"></a>获取当月最后一天</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;RP_LAST_DAY_OF_MONTHS&#x27;</span><br><span class="line">  EXPORTING</span><br><span class="line">    DAY_IN            = LV_DATE  </span><br><span class="line">  IMPORTING</span><br><span class="line">    LAST_DAY_OF_MONTH = LV_DATE</span><br><span class="line">  EXCEPTIONS</span><br><span class="line">    DAY_IN_NO_DATE    = 1</span><br><span class="line">    OTHERS            = 2.</span><br></pre></td></tr></table></figure><p>还有个方法，使用SAP链式语法 注意<code>:</code>的用法<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">DATA L_DATE TYPE SY-DATUM.</span><br><span class="line"></span><br><span class="line">SY-DATUM = &#x27;20190220&#x27;.</span><br><span class="line"></span><br><span class="line">L_DATE =: |&#123; SY-DATUM(6) &#125;01|,</span><br><span class="line">          L_DATE + 31,</span><br><span class="line">          |&#123; L_DATE(6) &#125;01|,</span><br><span class="line">          L_DATE - 1.</span><br><span class="line"></span><br><span class="line">WRITE: L_DATE.</span><br></pre></td></tr></table></figure></p><h3 id="根据周数-获取某周的第一天"><a href="#根据周数-获取某周的第一天" class="headerlink" title="根据周数 获取某周的第一天"></a>根据周数 获取某周的第一天</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">DATA: LV_DATE LIKE SCAL-DATE.</span><br><span class="line"></span><br><span class="line">CALL FUNCTION &#x27;WEEK_GET_FIRST_DAY&#x27;</span><br><span class="line">  EXPORTING</span><br><span class="line">    WEEK = &#x27;202013&#x27; &quot;表示2020年的第13周</span><br><span class="line">  IMPORTING</span><br><span class="line">    DATE = LV_DATE.</span><br></pre></td></tr></table></figure><h3 id="获取月份相关的描述"><a href="#获取月份相关的描述" class="headerlink" title="获取月份相关的描述"></a>获取月份相关的描述</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">DATA: MONTH_NAMES LIKE T247 OCCURS 0.</span><br><span class="line"></span><br><span class="line">CALL FUNCTION &#x27;MONTH_NAMES_GET&#x27;</span><br><span class="line">  EXPORTING</span><br><span class="line">    LANGUAGE              = SY-LANGU</span><br><span class="line">  TABLES</span><br><span class="line">    MONTH_NAMES           = MONTH_NAMES</span><br><span class="line">  EXCEPTIONS</span><br><span class="line">    MONTH_NAMES_NOT_FOUND = 1</span><br><span class="line">    OTHERS                = 2.</span><br></pre></td></tr></table></figure><h3 id="检查日期的有效性"><a href="#检查日期的有效性" class="headerlink" title="检查日期的有效性"></a>检查日期的有效性</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;DATE_CHECK_PLAUSIBILITY&#x27;</span><br><span class="line">  EXPORTING</span><br><span class="line">    date                      = &lt;fs_qcscdd&gt;-gltrp</span><br><span class="line">  EXCEPTIONS</span><br><span class="line">    plausibility_check_failed = 1</span><br><span class="line">    OTHERS                    = 2.</span><br></pre></td></tr></table></figure><h2 id="内外码转换"><a href="#内外码转换" class="headerlink" title="内外码转换"></a>内外码转换</h2><h3 id="添加前置0"><a href="#添加前置0" class="headerlink" title="添加前置0"></a>添加前置0</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;CONVERSION_EXIT_ALPHA_INTPUT&#x27;</span><br><span class="line">      EXPORTING</span><br><span class="line">        input  = &lt;fs_wxjh005&gt;-plnum</span><br><span class="line">      IMPORTING</span><br><span class="line">        output = &lt;fs_wxjh005&gt;-plnum.</span><br></pre></td></tr></table></figure><p>或者</p><p><fs_wxjh005>-plnum = |{ <fs_wxjh005>-plnum alpha = in }|.</p><h3 id="去除前置0"><a href="#去除前置0" class="headerlink" title="去除前置0"></a>去除前置0</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;CONVERSION_EXIT_ALPHA_OUTPUT&#x27;</span><br><span class="line">      EXPORTING</span><br><span class="line">        input  = &lt;fs_wxjh005&gt;-plnum</span><br><span class="line">      IMPORTING</span><br><span class="line">        output = &lt;fs_wxjh005&gt;-plnum.</span><br></pre></td></tr></table></figure><p>或者</p><p><fs_wxjh005>-plnum = |{ <fs_wxjh005>-plnum alpha = out }|.</p><h3 id="物料号转内码"><a href="#物料号转内码" class="headerlink" title="物料号转内码"></a>物料号转内码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;CONVERSION_EXIT_MATN1_INPUT&#x27;</span><br><span class="line">        EXPORTING</span><br><span class="line">          input        = &lt;fs_qcscdd&gt;-matnr</span><br><span class="line">        IMPORTING</span><br><span class="line">          output       = lv_matnr</span><br><span class="line">        EXCEPTIONS</span><br><span class="line">          length_error = 1</span><br><span class="line">          OTHERS       = 2.</span><br></pre></td></tr></table></figure><p>或者<br>lv_matnr = |{ <fs_qcscdd>-matnr alpha = in width = 18 }|.</p><h3 id="物料号转外码"><a href="#物料号转外码" class="headerlink" title="物料号转外码"></a>物料号转外码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;CONVERSION_EXIT_MATN1_OUTPUT&#x27;</span><br><span class="line">        EXPORTING</span><br><span class="line">          input        = &lt;fs_qcscdd&gt;-matnr</span><br><span class="line">        IMPORTING</span><br><span class="line">          output       = lv_matnr</span><br><span class="line">        EXCEPTIONS</span><br><span class="line">          length_error = 1</span><br><span class="line">          OTHERS       = 2.</span><br></pre></td></tr></table></figure><p>或者<br>lv_matnr = |{ <fs_qcscdd>-matnr alpha = out }|.</p><h3 id="外部单位转内部单位"><a href="#外部单位转内部单位" class="headerlink" title="外部单位转内部单位"></a>外部单位转内部单位</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;CONVERSION_EXIT_CUNIT_INPUT&#x27;</span><br><span class="line">  EXPORTING</span><br><span class="line">    input          = &lt;fs_qcscdd&gt;-gmein</span><br><span class="line">    language       = sy-langu</span><br><span class="line">  IMPORTING</span><br><span class="line">    output         = lv_meins</span><br><span class="line">  EXCEPTIONS</span><br><span class="line">    unit_not_found = 1</span><br><span class="line">    OTHERS         = 2.</span><br></pre></td></tr></table></figure><h3 id="内部单位转外部单位"><a href="#内部单位转外部单位" class="headerlink" title="内部单位转外部单位"></a>内部单位转外部单位</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;CONVERSION_EXIT_CUNIT_OUTPUT&#x27;</span><br><span class="line">    EXPORTING</span><br><span class="line">      input  = ls_dmes_planord-meins</span><br><span class="line">    IMPORTING</span><br><span class="line">      output = ls_dmes_planord-meins.</span><br></pre></td></tr></table></figure><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="创建消息文本"><a href="#创建消息文本" class="headerlink" title="创建消息文本"></a>创建消息文本</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;MESSAGE_TEXT_BUILD&#x27;</span><br><span class="line">  EXPORTING</span><br><span class="line">    msgid               = ls_return-id</span><br><span class="line">    msgnr               = ls_return-number</span><br><span class="line">    msgv1               = ls_return-message_v1</span><br><span class="line">    msgv2               = ls_return-message_v2</span><br><span class="line">    msgv3               = ls_return-message_v3</span><br><span class="line">    msgv4               = ls_return-message_v4</span><br><span class="line">  IMPORTING</span><br><span class="line">    message_text_output = lv_msg.</span><br></pre></td></tr></table></figure><h3 id="通过工厂代码获取公司代码"><a href="#通过工厂代码获取公司代码" class="headerlink" title="通过工厂代码获取公司代码"></a>通过工厂代码获取公司代码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">DATA: lv_werks TYPE werks_d,</span><br><span class="line">      lv_bukrs TYPE bukrs.</span><br><span class="line"></span><br><span class="line">call function &#x27;HRCA_PLANT_GET_COMPANYCODE&#x27;</span><br><span class="line">      exporting</span><br><span class="line">        plant                 = lv_werks</span><br><span class="line">      importing</span><br><span class="line">        companycode           = lv_bukrs</span><br><span class="line">      exceptions</span><br><span class="line">        no_company_code_found = 1</span><br><span class="line">        plant_not_found       = 2</span><br><span class="line">        others                = 3.</span><br></pre></td></tr></table></figure><h3 id="弹框提示信息"><a href="#弹框提示信息" class="headerlink" title="弹框提示信息"></a>弹框提示信息</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">DATA: p_text  TYPE string,</span><br><span class="line">      l_title TYPE string.</span><br><span class="line">      </span><br><span class="line">DATA: l_answer(1) type c.</span><br><span class="line">call function &#x27;POPUP_TO_CONFIRM_STEP&#x27;</span><br><span class="line">    exporting</span><br><span class="line">      defaultoption  = &#x27;Y&#x27;   &quot;定位光标以应答“是”或“否”</span><br><span class="line">      textline1      = p_text</span><br><span class="line">      titel          = l_title</span><br><span class="line">      cancel_display = &#x27; &#x27;</span><br><span class="line">    importing</span><br><span class="line">      answer         = l_answer</span><br><span class="line">    exceptions</span><br><span class="line">      others         = 0.       </span><br><span class="line"></span><br><span class="line">&quot;确认 l_answer = J</span><br></pre></td></tr></table></figure><h3 id="左下角信息提示"><a href="#左下角信息提示" class="headerlink" title="左下角信息提示"></a>左下角信息提示</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;SAPGUI_PROGRESS_INDICATOR&#x27;</span><br><span class="line">    EXPORTING</span><br><span class="line">      text = &#x27;正在检查数据......&#x27;.</span><br></pre></td></tr></table></figure><h3 id="获取随机lv-num长度的字符串"><a href="#获取随机lv-num长度的字符串" class="headerlink" title="获取随机lv_num长度的字符串"></a>获取随机lv_num长度的字符串</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">CALL FUNCTION &#x27;GENERAL_GET_RANDOM_PWD&#x27;</span><br><span class="line">  EXPORTING</span><br><span class="line">    number_chars = lv_num</span><br><span class="line">  IMPORTING</span><br><span class="line">    random_pwd   = lv_pwd.</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> abap </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> abap </tag>
+            
+            <tag> function </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ABAP JSON</title>
+      <link href="/posts/17bd88a9/"/>
+      <url>/posts/17bd88a9/</url>
+      
+        <content type="html"><![CDATA[<h1 id="abap-json-序列化和反序列化"><a href="#abap-json-序列化和反序列化" class="headerlink" title="abap json 序列化和反序列化"></a>abap json 序列化和反序列化</h1><p>将abap结构转化成json，使用类<code>/UI2/CL_JSON</code>里面的方法<code>SERIALIZE</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DATA(LV_JSON) = /UI2/CL_JSON=&gt;SERIALIZE( DATA          = XXXX</span><br><span class="line">                                         PRETTY_NAME   = /UI2/CL_JSON=&gt;PRETTY_MODE-NONE</span><br><span class="line">                                         COMPRESS      = ABAP_TRUE ).</span><br></pre></td></tr></table></figure><p>将json转变为abap结构，使用类<code>/UI2/CL_JSON</code>里面的方法<code>DESERIALIZE</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/UI2/CL_JSON=&gt;DESERIALIZE( EXPORTING JSON = LV_RES</span><br><span class="line">                                     PRETTY_NAME = /UI2/CL_JSON=&gt;PRETTY_MODE-NONE</span><br><span class="line">                           CHANGING DATA = XXXX ).</span><br></pre></td></tr></table></figure><hr><p>但是在实际业务中，有可能第三方系统的报文，有固定的格式，比如全小写，后者驼峰形式的，那我们就要使用到方法里面的其他参数。</p><h2 id="实现驼峰的两种方式"><a href="#实现驼峰的两种方式" class="headerlink" title="实现驼峰的两种方式"></a>实现驼峰的两种方式</h2><p><strong>PRETTY_NAME</strong><br>下面有一共有6个常量</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">CONSTANTS:</span><br><span class="line">  BEGIN OF PRETTY_MODE,</span><br><span class="line">    NONE          TYPE CHAR1  VALUE ``,</span><br><span class="line">    LOW_CASE      TYPE CHAR1  VALUE `L`,  &quot;输出都是小写</span><br><span class="line">    CAMEL_CASE    TYPE CHAR1  VALUE `X`,  &quot;驼峰</span><br><span class="line">    EXTENDED      TYPE CHAR1  VALUE `Y`,  &quot;驼峰形式的扩展吧</span><br><span class="line">    USER          TYPE CHAR1  VALUE `U`,  &quot;</span><br><span class="line">    USER_LOW_CASE TYPE CHAR1  VALUE `C`,  &quot;</span><br><span class="line">  END OF  PRETTY_MODE .</span><br></pre></td></tr></table></figure><h3 id="CAMEL-CASE-驼峰"><a href="#CAMEL-CASE-驼峰" class="headerlink" title="CAMEL_CASE 驼峰"></a>CAMEL_CASE 驼峰</h3><p>如果对方需要使用驼峰形式的key，我们就要用到<code>CAMEL_CASE</code>常量，定义sap结构的时候用下划线<code>_</code>分割，代码如下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">TYPES: BEGIN OF TY_JSON,</span><br><span class="line">         STUNO    TYPE STRING,</span><br><span class="line">         STU_NAME TYPE STRING,</span><br><span class="line">         STU_AGE  TYPE STRING,</span><br><span class="line">       END OF TY_JSON.</span><br><span class="line"></span><br><span class="line">DATA: LS_JSON TYPE TY_JSON.</span><br><span class="line">DATA: LV_JSON TYPE STRING.</span><br><span class="line"></span><br><span class="line">LS_JSON = VALUE #( STUNO = &#x27;1001&#x27; STU_NAME = &#x27;ray&#x27; STU_AGE = &#x27;18&#x27; ).</span><br><span class="line"></span><br><span class="line">LV_JSON = /UI2/CL_JSON=&gt;SERIALIZE( DATA          = LS_JSON</span><br><span class="line">                                   PRETTY_NAME   = /UI2/CL_JSON=&gt;PRETTY_MODE-CAMEL_CASE</span><br><span class="line">                                   COMPRESS      = ABAP_TRUE ).</span><br><span class="line"></span><br><span class="line">CL_DEMO_OUTPUT=&gt;DISPLAY_JSON( LV_JSON ).</span><br></pre></td></tr></table></figure><p>输出结果：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> <span class="attr">&quot;stuno&quot;</span>:<span class="string">&quot;1001&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;stuName&quot;</span>:<span class="string">&quot;ray&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;stuAge&quot;</span>:<span class="string">&quot;18&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>我们可以发现json已经自动将 下划线<code>_</code> 删除了，如果json中就需要<code>_</code>，那我们可以用 双下划线 <code>__</code> 来显示</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">TYPES: BEGIN OF TY_JSON,</span><br><span class="line">         STUNO    TYPE STRING,</span><br><span class="line">         STU_NAME TYPE STRING,</span><br><span class="line">         STU__AGE  TYPE STRING,</span><br><span class="line">       END OF TY_JSON.</span><br><span class="line"></span><br><span class="line">DATA: LS_JSON TYPE TY_JSON.</span><br><span class="line">DATA: LV_JSON TYPE STRING.</span><br><span class="line"></span><br><span class="line">LS_JSON = VALUE #( STUNO = &#x27;1001&#x27; STU_NAME = &#x27;ray&#x27; STU__AGE = &#x27;18&#x27; ).</span><br><span class="line"></span><br><span class="line">LV_JSON = /UI2/CL_JSON=&gt;SERIALIZE( DATA          = LS_JSON</span><br><span class="line">                                   PRETTY_NAME   = /UI2/CL_JSON=&gt;PRETTY_MODE-CAMEL_CASE</span><br><span class="line">                                   COMPRESS      = ABAP_TRUE ).</span><br><span class="line"></span><br><span class="line">CL_DEMO_OUTPUT=&gt;DISPLAY_JSON( LV_JSON ).</span><br></pre></td></tr></table></figure><p>输出为：</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> <span class="attr">&quot;stuno&quot;</span>:<span class="string">&quot;1001&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;stuName&quot;</span>:<span class="string">&quot;ray&quot;</span>,</span><br><span class="line"> <span class="attr">&quot;stu_age&quot;</span>:<span class="string">&quot;18&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="MAPPING-表"><a href="#MAPPING-表" class="headerlink" title="MAPPING 表"></a>MAPPING 表</h3><p>第二种方式，就是使用MAPPING 表来替换 abap结构-字段和json-key，代码如下<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">TYPES:</span><br><span class="line">  BEGIN OF NAME_MAPPING,</span><br><span class="line">    ABAP TYPE ABAP_COMPNAME,</span><br><span class="line">    JSON TYPE STRING,</span><br><span class="line">  END OF NAME_MAPPING .</span><br><span class="line">TYPES:</span><br><span class="line">  NAME_MAPPINGS TYPE HASHED TABLE OF NAME_MAPPING WITH UNIQUE KEY ABAP .</span><br><span class="line"></span><br><span class="line">DATA: LT_MAPPING TYPE NAME_MAPPINGS.</span><br><span class="line"></span><br><span class="line">LT_MAPPING = VALUE #( ( ABAP = &#x27;busCod&#x27; JSON = &#x27;busCod&#x27; )</span><br><span class="line">                      ( ABAP = &#x27;busMod&#x27; JSON = &#x27;busMod&#x27; )</span><br><span class="line">                      ( ABAP = &#x27;ccyNbr&#x27; JSON = &#x27;ccyNbr&#x27; )</span><br><span class="line">                      ( ABAP = &#x27;crtAcc&#x27; JSON = &#x27;crtAcc&#x27; )</span><br><span class="line">                      ( ABAP = &#x27;crtNam&#x27; JSON = &#x27;crtNam&#x27; )</span><br><span class="line">                      ( ABAP = &#x27;dbtAcc&#x27; JSON = &#x27;dbtAcc&#x27; )</span><br><span class="line">                      ( ABAP = &#x27;nusAge&#x27; JSON = &#x27;nusAge&#x27; )</span><br><span class="line">                      ( ABAP = &#x27;bnkFlg&#x27; JSON = &#x27;bnkFlg&#x27; )</span><br><span class="line">                      ( ABAP = &#x27;trsAmt&#x27; JSON = &#x27;trsAmt&#x27; )</span><br><span class="line">                      ( ABAP = &#x27;yurRef&#x27; JSON = &#x27;yurRef&#x27; ) ).</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">LS_REQUEST-REQUEST-HEAD = VALUE #( FUNCODE = &#x27;BB1PAYOP&#x27; USERID = &#x27;N00336xxxx&#x27; REQID = &#x27;202003161123456780001fbxxxxx&#x27; ).</span><br><span class="line"></span><br><span class="line">LS_REQUEST-REQUEST-BODY-BB1PAYBMX1 = VALUE #( ( BUSCOD = &#x27;N02030&#x27; BUSMOD = &#x27;00003&#x27; ) ).</span><br><span class="line">LS_REQUEST-REQUEST-BODY-BB1PAYOPX1 = VALUE #( ( CCYNBR = &#x27;10&#x27; CRTACC = &#x27;5719162xxxx401&#x27; CRTNAM = &#x27;欧弟专属测试户05&#x27; </span><br><span class="line">                                                DBTACC = &#x27;5719162xxxx401&#x27;</span><br><span class="line">                                                NUSAGE = &#x27;用途&#x27; BNKFLG = &#x27;Y&#x27; TRSAMT = &#x27;1.05&#x27; </span><br><span class="line">                                                YURREF = &#x27;202008260078xxxx5&#x27; ) ).</span><br><span class="line"></span><br><span class="line">LV_JSON = /UI2/CL_JSON=&gt;SERIALIZE( DATA          = LS_REQUEST</span><br><span class="line">                                   PRETTY_NAME   = /UI2/CL_JSON=&gt;PRETTY_MODE-LOW_CASE</span><br><span class="line">                                   COMPRESS      = ABAP_TRUE</span><br><span class="line">                                   NAME_MAPPINGS = LT_MAPPING ).</span><br></pre></td></tr></table></figure></p><p>输出的json<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;request&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;head&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;funcode&quot;</span>: <span class="string">&quot;BB1PAYOP&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;userid&quot;</span>: <span class="string">&quot;N003364302&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;reqid&quot;</span>: <span class="string">&quot;202003161123456780001fbxxxxx&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">&quot;body&quot;</span>: &#123;</span><br><span class="line">      <span class="attr">&quot;bb1paybmx1&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;busMod&quot;</span>: <span class="string">&quot;00003&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;busCod&quot;</span>: <span class="string">&quot;N02030&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">      ],</span><br><span class="line">      <span class="attr">&quot;bb1payopx1&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">&quot;dbtAcc&quot;</span>: <span class="string">&quot;5719162xxxx401&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;crtAcc&quot;</span>: <span class="string">&quot;5719162xxxx401&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;crtNam&quot;</span>: <span class="string">&quot;欧弟专属测试户05&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;ccyNbr&quot;</span>: <span class="string">&quot;10&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;trsAmt&quot;</span>: <span class="number">1.05</span>,</span><br><span class="line">          <span class="attr">&quot;bnkFlg&quot;</span>: <span class="string">&quot;Y&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;nusAge&quot;</span>: <span class="string">&quot;用途&quot;</span>,</span><br><span class="line">          <span class="attr">&quot;yurRef&quot;</span>: <span class="string">&quot;202008260078xxxx5&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>这样我们一样可以按照自己想要的格式，输出json</p><h2 id="EXTENDED-驼峰扩展"><a href="#EXTENDED-驼峰扩展" class="headerlink" title="EXTENDED  驼峰扩展"></a>EXTENDED  驼峰扩展</h2><p> 与 CAMEL_CASE 的工作方式相同，但还具有用于编码特殊字符的扩展逻辑，例如：“.”、“@”、“~”等。如果您需要带有不允许用于 ABAP 数据的字符的 JSON 名称，则应使用组件名称。如果 JSON 名称中没有特殊字符，请不要使用它 - 与 CAMEL_CASE 模式相比，性能会更慢。示例：<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> ABAP 名称 &#x27;__A__SCHEMA&#x27; 转换成 JSON 名称 &#x27;@schema&#x27;</span><br><span class="line">编码规则（ABAP 名称 → JSON 名称）：</span><br><span class="line">&#x27;__E__&#x27; → &#x27;!&#x27;</span><br><span class="line">&#x27;__N__&#x27; → &#x27;#&#x27;</span><br><span class="line">&#x27;__D__&#x27; → &#x27;$&#x27;</span><br><span class="line">&#x27;__P__&#x27; → &#x27;%&#x27;</span><br><span class="line">&#x27;__M__&#x27; → &#x27;&amp;&#x27;</span><br><span class="line">&#x27;__S__&#x27; → &#x27;*&#x27;</span><br><span class="line">&#x27;__H__&#x27; → &#x27;-&#x27;</span><br><span class="line">&#x27;__T__&#x27; → &#x27;~&#x27;</span><br><span class="line">&#x27;__L__&#x27; → &#x27;/&#x27;</span><br><span class="line">&#x27;__C__&#x27; → &#x27;:&#x27;</span><br><span class="line">&#x27;__V__&#x27; → &#x27;|&#x27;</span><br><span class="line">&#x27;__A__&#x27; → &#x27;@&#x27;</span><br><span class="line">&#x27;__O__&#x27; 或 &#x27;___&#x27; → &#x27;.&#x27;</span><br></pre></td></tr></table></figure></p><blockquote><p>更多<u>/UI2/CL_JSON</u>的使用说明请参照<br><a href="https://wiki.scn.sap.com/wiki/display/Snippets/One+more+ABAP+to+JSON+Serializer+and+Deserializer">https://wiki.scn.sap.com/wiki/display/Snippets/One+more+ABAP+to+JSON+Serializer+and+Deserializer</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> abap </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> abap </tag>
+            
+            <tag> json </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ALV实现小计功能</title>
+      <link href="/posts/8818e972/"/>
+      <url>/posts/8818e972/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ALV在展示时实现小计功能"><a href="#ALV在展示时实现小计功能" class="headerlink" title="ALV在展示时实现小计功能"></a>ALV在展示时实现小计功能</h1><p>在需要小计的字段，添加<code>FIELDCATE-DO_SUM = &#39;X&#39;</code>属性</p><p>如果需要小计在第一行显示 需要添加<code>TOTALS_BEFORE_ITEMS = &#39;X&#39;</code>属性</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">  DATA LV_COL_POS  TYPE LVC_COLPOS.</span><br><span class="line">  DATA LT_FIELDCAT TYPE LVC_T_FCAT.</span><br><span class="line">  DATA LS_FIELDCAT TYPE LVC_S_FCAT.</span><br><span class="line">  DATA LS_LAYOUT   TYPE LVC_S_LAYO.</span><br><span class="line">  DATA LT_SORT     TYPE LVC_T_SORT.</span><br><span class="line">  DATA LT_EVENTS   TYPE SLIS_T_EVENT.</span><br><span class="line">  DATA LS_EVENTS   TYPE SLIS_ALV_EVENT.</span><br><span class="line">  DATA LO_GRID     TYPE REF TO CL_GUI_ALV_GRID.</span><br><span class="line"></span><br><span class="line">  &quot;set fieldcat...</span><br><span class="line"></span><br><span class="line">  &quot;指定需要小计的列，以及如何排序</span><br><span class="line">  LT_SORT = VALUE #( ( SPOS = 1 FIELDNAME = &#x27;ACGRP&#x27; SUBTOT = &#x27;&#x27; )</span><br><span class="line">                     ( SPOS = 2 FIELDNAME = &#x27;ACTXT&#x27; SUBTOT = &#x27;X&#x27; ) ). </span><br><span class="line"></span><br><span class="line">  CALL FUNCTION &#x27;REUSE_ALV_GRID_DISPLAY_LVC&#x27;</span><br><span class="line">    EXPORTING</span><br><span class="line">      I_CALLBACK_PROGRAM          = SY-REPID</span><br><span class="line">      IS_LAYOUT_LVC               = LS_LAYOUT</span><br><span class="line">      IT_FIELDCAT_LVC             = LT_FIELDCAT</span><br><span class="line">      I_CALLBACK_HTML_TOP_OF_PAGE = &#x27;TOP_OF_PAGE1&#x27;</span><br><span class="line">*     IT_EVENTS                   = LT_EVENTS</span><br><span class="line">      IT_SORT_LVC                 = LT_SORT</span><br><span class="line">    TABLES</span><br><span class="line">      T_OUTTAB                    = GT_DETAIL</span><br><span class="line">    EXCEPTIONS</span><br><span class="line">      PROGRAM_ERROR               = 1</span><br><span class="line">      OTHERS                      = 2.</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> abap </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> abap </tag>
+            
+            <tag> alv </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Postman调用web service</title>
+      <link href="/posts/b2009979/"/>
+      <url>/posts/b2009979/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Postman-测试-SAP发布的WebService"><a href="#Postman-测试-SAP发布的WebService" class="headerlink" title="Postman 测试 SAP发布的WebService"></a>Postman 测试 SAP发布的WebService</h1><p>在Postman Header中添加 如下参数</p><p><code>Content-Type　　application/soap+xml;charset=utf-8</code></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> postman </tag>
+            
+            <tag> webservice </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>my first blog</title>
+      <link href="/posts/d63b390f/"/>
+      <url>/posts/d63b390f/</url>
+      
+        <content type="html"><![CDATA[<div class="note simple"><p>hexo cl &amp;&amp; hexo g &amp;&amp; gulp &amp;&amp; hexo d</p></div><div class="note default simple"><p>default 提示块标签</p></div><div class="note primary simple"><p>primary 提示块标签</p></div><div class="note success simple"><p>success 提示块标签</p></div><div class="note info simple"><p>info 提示块标签</p></div><div class="note warning simple"><p>warning 提示块标签</p></div><div class="note danger simple"><p>danger 提示块标签</p></div><div class="tabs" id="test1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#test1-1">test1 1</button></li><li class="tab"><button type="button" data-href="#test1-2">test1 2</button></li><li class="tab"><button type="button" data-href="#test1-3">test1 3</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="test1-1"><p><strong>This is Tab 1.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-2"><p><strong>This is Tab 2.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-3"><p><strong>This is Tab 3.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><div class="justified-gallery"><p><img src="https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg" alt=""><br><img src="https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg" alt=""></p>          </div><div class="mermaid">pie    title Key elements in Product X    &quot;Calcium&quot; : 42.96    &quot;Potassium&quot; : 50.05    &quot;Magnesium&quot; : 10.01    &quot;Iron&quot; :  5</div><div class="mermaid">sequenceDiagram    participant Alice    participant Bob    Alice-&gt;&gt;John: Hello John, how are you?    loop Healthcheck        John-&gt;&gt;John: Fight against hypochondria    end    Note right of John: Rational thoughts &lt;br&#x2F;&gt;prevail!    John--&gt;&gt;Alice: Great!    John-&gt;&gt;Bob: How about you?    Bob--&gt;&gt;John: Jolly good!</div><a class="btn-beautify button--animated larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify button--animated blue larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify button--animated pink larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify button--animated red larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify button--animated purple larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify button--animated orange larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><a class="btn-beautify button--animated green larger" href="https://butterfly.js.org/"   title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><p>哪個英文字母最酷？ <span class="hide-inline"><button type="button" class="hide-button button--animated" style="background-color: #FF7242;color: #fff">查看答案  </button><span class="hide-content">因為西裝褲(C裝酷)</span></span></p><p>門裏站着一個人? <span class="hide-inline"><button type="button" class="hide-button button--animated" style="">Click  </button><span class="hide-content">閃</span></span></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>S4中的条件价格后台表</title>
+      <link href="/posts/2ceff666/"/>
+      <url>/posts/2ceff666/</url>
+      
+        <content type="html"><![CDATA[<h1 id="S4-中的条件价格表"><a href="#S4-中的条件价格表" class="headerlink" title="S4 中的条件价格表"></a>S4 中的条件价格表</h1><p><code>prcd_elements</code></p><h1 id="ECC的条件价格表"><a href="#ECC的条件价格表" class="headerlink" title="ECC的条件价格表"></a>ECC的条件价格表</h1><p><code>konp</code></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+          <category> abap </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> abap </tag>
+            
+            <tag> s4 </tag>
+            
+            <tag> price </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SAP SOAMANGER 打不开网站</title>
+      <link href="/posts/83c8164a/"/>
+      <url>/posts/83c8164a/</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>输入事务代码 <code>SOAMANGER</code> ，没有调用浏览器打开网站</p><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p><code>SE24</code> 查看 类<code>CL_GUI_HTML_VIEWER</code> 中的方法 <code>DETACH_URL_IN_BROWSER</code> 的第<strong>26</strong>行 ， Debug 将 <code>return_value</code>的值改为空。</p><p><img src="https://cdn.jsdelivr.net/gh/yanleidong/PicGo/img/20211122111535.png" alt="20211122111535"></p><blockquote><p>参考链接：<a href="https://www.cnblogs.com/WACBZWY/p/11970420.html">https://www.cnblogs.com/WACBZWY/p/11970420.html</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> sap </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sap </tag>
+            
+            <tag> s4 </tag>
+            
+            <tag> soamanger </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
